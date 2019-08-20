@@ -25,6 +25,7 @@
 		30934D52230C856300CA57C9 /* NetworkSourceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D51230C856300CA57C9 /* NetworkSourceConfiguration.swift */; };
 		30934D58230C8B6A00CA57C9 /* GIFItemCollectionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D57230C8B6A00CA57C9 /* GIFItemCollectionSource.swift */; };
 		30C0CA48230C968E00CB1A6B /* GIFItemCollectionSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0CA47230C968E00CB1A6B /* GIFItemCollectionSourceDelegate.swift */; };
+		30C0CA4A230CA0F900CB1A6B /* GIFItemCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0CA49230CA0F900CB1A6B /* GIFItemCollectionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		30934D51230C856300CA57C9 /* NetworkSourceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSourceConfiguration.swift; sourceTree = "<group>"; };
 		30934D57230C8B6A00CA57C9 /* GIFItemCollectionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionSource.swift; sourceTree = "<group>"; };
 		30C0CA47230C968E00CB1A6B /* GIFItemCollectionSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionSourceDelegate.swift; sourceTree = "<group>"; };
+		30C0CA49230CA0F900CB1A6B /* GIFItemCollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				30934D1F230C5CF700CA57C9 /* giphytrendsTests.swift */,
 				30934D21230C5CF700CA57C9 /* Info.plist */,
+				30C0CA49230CA0F900CB1A6B /* GIFItemCollectionTests.swift */,
 			);
 			path = giphytrendsTests;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30934D20230C5CF700CA57C9 /* giphytrendsTests.swift in Sources */,
+				30C0CA4A230CA0F900CB1A6B /* GIFItemCollectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
