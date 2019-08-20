@@ -174,17 +174,33 @@
 		30934D3E230C7F6400CA57C9 /* GIFItemCollection */ = {
 			isa = PBXGroup;
 			children = (
-				30934D41230C7FAB00CA57C9 /* GIFItem.swift */,
-				30934D43230C7FE900CA57C9 /* GIFItemCollection.swift */,
+				30934D54230C869C00CA57C9 /* Data */,
+				30934D53230C868900CA57C9 /* Network */,
 				30934D47230C807E00CA57C9 /* GIFItemCollectionCache.swift */,
-				30934D49230C80E400CA57C9 /* GIFItemCollectionNetworkLoader.swift */,
-				30934D3F230C7F8D00CA57C9 /* GIFItemCollectionPage.swift */,
 				30934D45230C803B00CA57C9 /* GIFItemCollectionProvider.swift */,
 				30934D4B230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift */,
+			);
+			path = GIFItemCollection;
+			sourceTree = "<group>";
+		};
+		30934D53230C868900CA57C9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				30934D49230C80E400CA57C9 /* GIFItemCollectionNetworkLoader.swift */,
 				30934D4D230C849E00CA57C9 /* NetworkLoaderAPIKeyStorage.swift */,
 				30934D51230C856300CA57C9 /* NetworkLoaderConfigurationReader.swift */,
 			);
-			path = GIFItemCollection;
+			path = Network;
+			sourceTree = "<group>";
+		};
+		30934D54230C869C00CA57C9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				30934D41230C7FAB00CA57C9 /* GIFItem.swift */,
+				30934D43230C7FE900CA57C9 /* GIFItemCollection.swift */,
+				30934D3F230C7F8D00CA57C9 /* GIFItemCollectionPage.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
