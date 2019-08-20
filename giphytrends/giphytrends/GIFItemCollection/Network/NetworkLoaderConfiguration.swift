@@ -1,6 +1,6 @@
 import Foundation
 
-class NetworkLoaderConfigurationReader: NSObject {
+class NetworkLoaderConfiguration: NSObject {
     
     @IBOutlet weak var infoReader: InfoReader!
     
