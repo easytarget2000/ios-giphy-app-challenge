@@ -1,1 +1,1 @@
-typealias GIFItemCollectionProviderCallback = (GIFItemCollection)
+typealias GIFItemCollectionProviderCallback = (GIFItemCollection) -> ()
