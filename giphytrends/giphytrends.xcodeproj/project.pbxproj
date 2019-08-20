@@ -14,6 +14,13 @@
 		30934D15230C5CF700CA57C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30934D13230C5CF700CA57C9 /* LaunchScreen.storyboard */; };
 		30934D20230C5CF700CA57C9 /* giphytrendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D1F230C5CF700CA57C9 /* giphytrendsTests.swift */; };
 		30934D2B230C5CF800CA57C9 /* giphytrendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D2A230C5CF800CA57C9 /* giphytrendsUITests.swift */; };
+		30934D40230C7F8D00CA57C9 /* GIFItemCollectionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D3F230C7F8D00CA57C9 /* GIFItemCollectionPage.swift */; };
+		30934D42230C7FAB00CA57C9 /* GIFItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D41230C7FAB00CA57C9 /* GIFItem.swift */; };
+		30934D44230C7FE900CA57C9 /* GIFItemCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D43230C7FE900CA57C9 /* GIFItemCollection.swift */; };
+		30934D46230C803B00CA57C9 /* GIFItemCollectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D45230C803B00CA57C9 /* GIFItemCollectionProvider.swift */; };
+		30934D48230C807E00CA57C9 /* GIFItemCollectionCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D47230C807E00CA57C9 /* GIFItemCollectionCache.swift */; };
+		30934D4A230C80E400CA57C9 /* GIFItemCollectionNetworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D49230C80E400CA57C9 /* GIFItemCollectionNetworkLoader.swift */; };
+		30934D4C230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4B230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		30934D26230C5CF800CA57C9 /* giphytrendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = giphytrendsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30934D2A230C5CF800CA57C9 /* giphytrendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = giphytrendsUITests.swift; sourceTree = "<group>"; };
 		30934D2C230C5CF800CA57C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30934D3F230C7F8D00CA57C9 /* GIFItemCollectionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionPage.swift; sourceTree = "<group>"; };
+		30934D41230C7FAB00CA57C9 /* GIFItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItem.swift; sourceTree = "<group>"; };
+		30934D43230C7FE900CA57C9 /* GIFItemCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollection.swift; sourceTree = "<group>"; };
+		30934D45230C803B00CA57C9 /* GIFItemCollectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionProvider.swift; sourceTree = "<group>"; };
+		30934D47230C807E00CA57C9 /* GIFItemCollectionCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionCache.swift; sourceTree = "<group>"; };
+		30934D49230C80E400CA57C9 /* GIFItemCollectionNetworkLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionNetworkLoader.swift; sourceTree = "<group>"; };
+		30934D4B230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionProviderCallback.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +167,13 @@
 		30934D3E230C7F6400CA57C9 /* GIFItemCollection */ = {
 			isa = PBXGroup;
 			children = (
+				30934D41230C7FAB00CA57C9 /* GIFItem.swift */,
+				30934D43230C7FE900CA57C9 /* GIFItemCollection.swift */,
+				30934D47230C807E00CA57C9 /* GIFItemCollectionCache.swift */,
+				30934D49230C80E400CA57C9 /* GIFItemCollectionNetworkLoader.swift */,
+				30934D3F230C7F8D00CA57C9 /* GIFItemCollectionPage.swift */,
+				30934D45230C803B00CA57C9 /* GIFItemCollectionProvider.swift */,
+				30934D4B230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift */,
 			);
 			path = GIFItemCollection;
 			sourceTree = "<group>";
@@ -288,8 +309,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30934D44230C7FE900CA57C9 /* GIFItemCollection.swift in Sources */,
+				30934D4C230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift in Sources */,
+				30934D4A230C80E400CA57C9 /* GIFItemCollectionNetworkLoader.swift in Sources */,
 				30934D0D230C5CF600CA57C9 /* ViewController.swift in Sources */,
+				30934D46230C803B00CA57C9 /* GIFItemCollectionProvider.swift in Sources */,
+				30934D42230C7FAB00CA57C9 /* GIFItem.swift in Sources */,
 				30934D0B230C5CF600CA57C9 /* AppDelegate.swift in Sources */,
+				30934D48230C807E00CA57C9 /* GIFItemCollectionCache.swift in Sources */,
+				30934D40230C7F8D00CA57C9 /* GIFItemCollectionPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
