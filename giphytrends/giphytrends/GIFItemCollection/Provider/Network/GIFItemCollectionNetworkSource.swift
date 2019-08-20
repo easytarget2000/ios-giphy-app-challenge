@@ -1,12 +1,12 @@
 import Foundation
 
-class GIFItemCollectionNetworkLoader: NSObject {
+class GIFItemCollectionNetworkSource: NSObject, GIFItemCollectionSource {
     
-    @IBOutlet weak var apiKeyStorage: NetworkLoaderAPIKeyStorage!
-    @IBOutlet weak var configuration: NetworkLoaderConfiguration!
+    @IBOutlet weak var apiKeyStorage: NetworkSourceAPIKeyStorage!
+    @IBOutlet weak var configuration: NetworkSourceConfiguration!
     
     func getCollection(
-        callback: @escaping GIFItemCollectionProviderCallback
+        delegate: GIFItemCollectionSourceDelegate?
     ) {
         let numberOfItemsPerPage = configuration.numberOfItemsPerPage
         let numberOfPages = configuration.numberOfPages
@@ -14,15 +14,16 @@ class GIFItemCollectionNetworkLoader: NSObject {
         getCollection(
             numberOfItemsPerPage: numberOfItemsPerPage,
             numberOfPages: numberOfPages,
-            callback: callback
+            delegate: delegate
         )
     }
     
     func getCollection(
         numberOfItemsPerPage: Int,
         numberOfPages: Int,
-        callback: @escaping GIFItemCollectionProviderCallback
+        delegate: GIFItemCollectionSourceDelegate?
     ) {
+        weak var delegate = delegate
         
     }
 }

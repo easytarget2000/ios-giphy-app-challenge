@@ -1,6 +1,6 @@
 import Foundation
 
-class NetworkLoaderAPIKeyStorage: NSObject {
+class NetworkSourceAPIKeyStorage: NSObject {
     
     let apiKey = "VLs4mdShDXJYEKSGd1tzQFDYwFjMSoaJ"
     

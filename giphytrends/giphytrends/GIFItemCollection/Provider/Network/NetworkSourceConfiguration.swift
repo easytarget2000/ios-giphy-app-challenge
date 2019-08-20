@@ -1,6 +1,6 @@
 import Foundation
 
-class NetworkLoaderConfiguration: NSObject {
+class NetworkSourceConfiguration: NSObject {
     
     @IBOutlet weak var infoReader: InfoReader!
     
@@ -10,8 +10,7 @@ class NetworkLoaderConfiguration: NSObject {
     var numberOfItemsPerPage: Int {
         get {
             return infoReader.getInt(
-                key: NetworkLoaderConfigurationReader
-                    .numberOfItemsToLoadPerPageKey
+                key: NetworkSourceConfiguration.numberOfItemsToLoadPerPageKey
             )
         }
     }
@@ -19,7 +18,7 @@ class NetworkLoaderConfiguration: NSObject {
     var numberOfPages: Int {
         get {
             return infoReader.getInt(
-                key: NetworkLoaderConfigurationReader.numberOfPagesToLoadKey
+                key: NetworkSourceConfiguration.numberOfPagesToLoadKey
             )
         }
     }
