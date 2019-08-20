@@ -174,11 +174,9 @@
 		30934D3E230C7F6400CA57C9 /* GIFItemCollection */ = {
 			isa = PBXGroup;
 			children = (
+				30934D56230C883800CA57C9 /* UI */,
+				30934D55230C882000CA57C9 /* Provider */,
 				30934D54230C869C00CA57C9 /* Data */,
-				30934D53230C868900CA57C9 /* Network */,
-				30934D47230C807E00CA57C9 /* GIFItemCollectionCache.swift */,
-				30934D45230C803B00CA57C9 /* GIFItemCollectionProvider.swift */,
-				30934D4B230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift */,
 			);
 			path = GIFItemCollection;
 			sourceTree = "<group>";
@@ -202,6 +200,25 @@
 			);
 			path = Data;
 			sourceTree = "<group>";
+		};
+		30934D55230C882000CA57C9 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				30934D53230C868900CA57C9 /* Network */,
+				30934D47230C807E00CA57C9 /* GIFItemCollectionCache.swift */,
+				30934D45230C803B00CA57C9 /* GIFItemCollectionProvider.swift */,
+				30934D4B230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		30934D56230C883800CA57C9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UI;
+			path = giphytrends/GIFItemCollection/UI;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
