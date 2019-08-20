@@ -97,6 +97,7 @@
 		30934D09230C5CF600CA57C9 /* giphytrends */ = {
 			isa = PBXGroup;
 			children = (
+				30934D3E230C7F6400CA57C9 /* GIFItemCollection */,
 				30934D3A230C5DCA00CA57C9 /* Common */,
 				30934D0A230C5CF600CA57C9 /* AppDelegate.swift */,
 				30934D0C230C5CF600CA57C9 /* ViewController.swift */,
@@ -147,6 +148,13 @@
 				30934D11230C5CF700CA57C9 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		30934D3E230C7F6400CA57C9 /* GIFItemCollection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GIFItemCollection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
