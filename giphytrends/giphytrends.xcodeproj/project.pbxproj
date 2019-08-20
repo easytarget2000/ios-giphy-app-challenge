@@ -21,6 +21,9 @@
 		30934D48230C807E00CA57C9 /* GIFItemCollectionCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D47230C807E00CA57C9 /* GIFItemCollectionCache.swift */; };
 		30934D4A230C80E400CA57C9 /* GIFItemCollectionNetworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D49230C80E400CA57C9 /* GIFItemCollectionNetworkLoader.swift */; };
 		30934D4C230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4B230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift */; };
+		30934D4E230C849E00CA57C9 /* NetworkLoaderAPIKeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4D230C849E00CA57C9 /* NetworkLoaderAPIKeyStorage.swift */; };
+		30934D50230C84F100CA57C9 /* InfoReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4F230C84F100CA57C9 /* InfoReader.swift */; };
+		30934D52230C856300CA57C9 /* NetworkLoaderConfigurationReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D51230C856300CA57C9 /* NetworkLoaderConfigurationReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		30934D47230C807E00CA57C9 /* GIFItemCollectionCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionCache.swift; sourceTree = "<group>"; };
 		30934D49230C80E400CA57C9 /* GIFItemCollectionNetworkLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionNetworkLoader.swift; sourceTree = "<group>"; };
 		30934D4B230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionProviderCallback.swift; sourceTree = "<group>"; };
+		30934D4D230C849E00CA57C9 /* NetworkLoaderAPIKeyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoaderAPIKeyStorage.swift; sourceTree = "<group>"; };
+		30934D4F230C84F100CA57C9 /* InfoReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoReader.swift; sourceTree = "<group>"; };
+		30934D51230C856300CA57C9 /* NetworkLoaderConfigurationReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoaderConfigurationReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,7 @@
 		30934D3A230C5DCA00CA57C9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				30934D4F230C84F100CA57C9 /* InfoReader.swift */,
 				30934D3C230C5DF300CA57C9 /* Assets */,
 				30934D3B230C5DD200CA57C9 /* Storyboards */,
 			);
@@ -174,6 +181,8 @@
 				30934D3F230C7F8D00CA57C9 /* GIFItemCollectionPage.swift */,
 				30934D45230C803B00CA57C9 /* GIFItemCollectionProvider.swift */,
 				30934D4B230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift */,
+				30934D4D230C849E00CA57C9 /* NetworkLoaderAPIKeyStorage.swift */,
+				30934D51230C856300CA57C9 /* NetworkLoaderConfigurationReader.swift */,
 			);
 			path = GIFItemCollection;
 			sourceTree = "<group>";
@@ -309,6 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30934D4E230C849E00CA57C9 /* NetworkLoaderAPIKeyStorage.swift in Sources */,
+				30934D52230C856300CA57C9 /* NetworkLoaderConfigurationReader.swift in Sources */,
+				30934D50230C84F100CA57C9 /* InfoReader.swift in Sources */,
 				30934D44230C7FE900CA57C9 /* GIFItemCollection.swift in Sources */,
 				30934D4C230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift in Sources */,
 				30934D4A230C80E400CA57C9 /* GIFItemCollectionNetworkLoader.swift in Sources */,
