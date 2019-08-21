@@ -6,4 +6,4 @@ class ItemCollectionPage: NSObject {
     init(items: [Item]) {
         self.items = items
     }
-}
+}   

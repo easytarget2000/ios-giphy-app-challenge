@@ -22,12 +22,13 @@
 		30934D4C230C812800CA57C9 /* ItemCollectionProviderCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4B230C812800CA57C9 /* ItemCollectionProviderCallback.swift */; };
 		30934D4E230C849E00CA57C9 /* ItemCollectionNetworkSourceAPIKeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4D230C849E00CA57C9 /* ItemCollectionNetworkSourceAPIKeyStorage.swift */; };
 		30934D50230C84F100CA57C9 /* InfoReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4F230C84F100CA57C9 /* InfoReader.swift */; };
-		30934D52230C856300CA57C9 /* ItemCollectionNetworkSourceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D51230C856300CA57C9 /* ItemCollectionNetworkSourceConfiguration.swift */; };
+		30934D52230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D51230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift */; };
 		30934D58230C8B6A00CA57C9 /* ItemCollectionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D57230C8B6A00CA57C9 /* ItemCollectionSource.swift */; };
 		30C07E04230DA69700568ABE /* GIFItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E03230DA69700568ABE /* GIFItemCollectionViewController.swift */; };
 		30C07E06230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E05230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift */; };
 		30C07E08230DB42900568ABE /* ItemCollectionNetworkResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E07230DB42900568ABE /* ItemCollectionNetworkResponseParser.swift */; };
 		30C07E0A230DE68B00568ABE /* GIFItemCollectionNetworkSourceParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E09230DE68B00568ABE /* GIFItemCollectionNetworkSourceParserTests.swift */; };
+		30C07E0C230DF78400568ABE /* ItemCollectionNetworkSourceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E0B230DF78400568ABE /* ItemCollectionNetworkSourceConfiguration.swift */; };
 		30C0CA48230C968E00CB1A6B /* ItemCollectionSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0CA47230C968E00CB1A6B /* ItemCollectionSourceDelegate.swift */; };
 		30C0CA4A230CA0F900CB1A6B /* GIFItemCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0CA49230CA0F900CB1A6B /* GIFItemCollectionTests.swift */; };
 		46B1C2FA023377107DF2754F /* Pods_giphytrendsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E3763815A0E339FCDF8A71 /* Pods_giphytrendsUITests.framework */; };
@@ -73,12 +74,13 @@
 		30934D4B230C812800CA57C9 /* ItemCollectionProviderCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionProviderCallback.swift; sourceTree = "<group>"; };
 		30934D4D230C849E00CA57C9 /* ItemCollectionNetworkSourceAPIKeyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionNetworkSourceAPIKeyStorage.swift; sourceTree = "<group>"; };
 		30934D4F230C84F100CA57C9 /* InfoReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoReader.swift; sourceTree = "<group>"; };
-		30934D51230C856300CA57C9 /* ItemCollectionNetworkSourceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionNetworkSourceConfiguration.swift; sourceTree = "<group>"; };
+		30934D51230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionProviderConfiguration.swift; sourceTree = "<group>"; };
 		30934D57230C8B6A00CA57C9 /* ItemCollectionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionSource.swift; sourceTree = "<group>"; };
 		30C07E03230DA69700568ABE /* GIFItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
 		30C07E05230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionPageNetworkResponse.swift; sourceTree = "<group>"; };
 		30C07E07230DB42900568ABE /* ItemCollectionNetworkResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionNetworkResponseParser.swift; sourceTree = "<group>"; };
 		30C07E09230DE68B00568ABE /* GIFItemCollectionNetworkSourceParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionNetworkSourceParserTests.swift; sourceTree = "<group>"; };
+		30C07E0B230DF78400568ABE /* ItemCollectionNetworkSourceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionNetworkSourceConfiguration.swift; sourceTree = "<group>"; };
 		30C0CA47230C968E00CB1A6B /* ItemCollectionSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionSourceDelegate.swift; sourceTree = "<group>"; };
 		30C0CA49230CA0F900CB1A6B /* GIFItemCollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionTests.swift; sourceTree = "<group>"; };
 		4156C31AA40ED0EB43353F9C /* Pods-giphytrendsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giphytrendsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-giphytrendsUITests/Pods-giphytrendsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -212,12 +214,12 @@
 		30934D53230C868900CA57C9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				30934D3F230C7F8D00CA57C9 /* ItemCollectionPage.swift */,
 				30C07E07230DB42900568ABE /* ItemCollectionNetworkResponseParser.swift */,
 				30934D49230C80E400CA57C9 /* ItemCollectionNetworkSource.swift */,
-				30C07E05230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift */,
 				30934D4D230C849E00CA57C9 /* ItemCollectionNetworkSourceAPIKeyStorage.swift */,
-				30934D51230C856300CA57C9 /* ItemCollectionNetworkSourceConfiguration.swift */,
+				30C07E0B230DF78400568ABE /* ItemCollectionNetworkSourceConfiguration.swift */,
+				30934D3F230C7F8D00CA57C9 /* ItemCollectionPage.swift */,
+				30C07E05230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -238,6 +240,7 @@
 				30934D4B230C812800CA57C9 /* ItemCollectionProviderCallback.swift */,
 				30934D57230C8B6A00CA57C9 /* ItemCollectionSource.swift */,
 				30C0CA47230C968E00CB1A6B /* ItemCollectionSourceDelegate.swift */,
+				30934D51230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift */,
 				30934D53230C868900CA57C9 /* Network */,
 			);
 			path = Provider;
@@ -488,10 +491,11 @@
 				30934D58230C8B6A00CA57C9 /* ItemCollectionSource.swift in Sources */,
 				30C0CA48230C968E00CB1A6B /* ItemCollectionSourceDelegate.swift in Sources */,
 				30934D4E230C849E00CA57C9 /* ItemCollectionNetworkSourceAPIKeyStorage.swift in Sources */,
-				30934D52230C856300CA57C9 /* ItemCollectionNetworkSourceConfiguration.swift in Sources */,
+				30934D52230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift in Sources */,
 				30934D50230C84F100CA57C9 /* InfoReader.swift in Sources */,
 				30C07E06230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift in Sources */,
 				30C07E04230DA69700568ABE /* GIFItemCollectionViewController.swift in Sources */,
+				30C07E0C230DF78400568ABE /* ItemCollectionNetworkSourceConfiguration.swift in Sources */,
 				30934D44230C7FE900CA57C9 /* ItemCollection.swift in Sources */,
 				30934D4C230C812800CA57C9 /* ItemCollectionProviderCallback.swift in Sources */,
 				30934D4A230C80E400CA57C9 /* ItemCollectionNetworkSource.swift in Sources */,

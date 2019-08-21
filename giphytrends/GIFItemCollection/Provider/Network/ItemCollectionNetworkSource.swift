@@ -7,31 +7,28 @@ class ItemCollectionNetworkSource: NSObject, ItemCollectionSource {
     private static let itemCountLimitParameterKey = "limit"
     @IBOutlet weak var apiKeyStorage:
         ItemCollectionNetworkSourceAPIKeyStorage!
-    @IBOutlet weak var configuration:
-        ItemCollectionNetworkSourceConfiguration!
     @IBOutlet weak var parser: ItemCollectionNetworkResponseParser!
-    
+    @IBOutlet weak var configuration: ItemCollectionNetworkSourceConfiguration!
     private lazy var endpointURL: URL = {
         return URL(string: configuration.endpointURL)!
     }()
     private lazy var apiKey: String = {
         return apiKeyStorage.apiKey
     }()
-    private lazy var numberOfItemsPerPage: Int = {
-        return configuration.numberOfItemsPerPage
-    }()
-    private lazy var numberOfPages: Int = {
-        return configuration.numberOfPages
-    }()
     private weak var delegate: ItemCollectionSourceDelegate?
     
-    func getCollection(
+    func getCollectionPaginated(
+        numberOfItemsPerPage: Int,
+        numberOfPages: Int,
         delegate: ItemCollectionSourceDelegate?
     ) {
         self.delegate = delegate
         
         for pageIndex in 0 ..< numberOfPages {
-            getPage(pageIndex: pageIndex)
+            getPage(
+                pageIndex: pageIndex,
+                numberOfItemsPerPage: numberOfItemsPerPage
+            )
         }
     }
     
@@ -41,7 +38,7 @@ class ItemCollectionNetworkSource: NSObject, ItemCollectionSource {
 
 extension ItemCollectionNetworkSource {
     
-    private func getPage(pageIndex: Int) {
+    private func getPage(pageIndex: Int, numberOfItemsPerPage: Int) {
         let itemCountOffset = pageIndex * numberOfItemsPerPage
         let pageParameters: Parameters = [
             ItemCollectionNetworkSource.apiKeyParameterKey : apiKey,

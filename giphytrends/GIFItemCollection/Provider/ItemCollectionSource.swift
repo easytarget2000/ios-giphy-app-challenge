@@ -2,6 +2,10 @@ import Foundation
 
 @objc protocol ItemCollectionSource: NSObjectProtocol {
     
-    func getCollection(delegate: ItemCollectionSourceDelegate?)
+    func getCollectionPaginated(
+        numberOfItemsPerPage: Int,
+        numberOfPages: Int,
+        delegate: ItemCollectionSourceDelegate?
+    )
     
 }

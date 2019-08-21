@@ -4,8 +4,16 @@ class ItemCollectionProvider: NSObject {
     
     @IBOutlet weak var cache: ItemCollectionSource?
     @IBOutlet weak var networkLoader: ItemCollectionSource!
+    @IBOutlet weak var configuration: ItemCollectionProviderConfiguration!
+    private lazy var numberOfItemsPerPage: Int = {
+        return configuration.numberOfItemsPerPage
+    }()
+    private lazy var numberOfPages: Int = {
+        return configuration.numberOfPages
+    }()
     private var collection = ItemCollection()
     private var callback: ItemCollectionProviderCallback?
+    
 }
 
 // MARK: - Source Access
@@ -17,8 +25,16 @@ extension ItemCollectionProvider {
     ) {
         self.callback = callback
         collection = ItemCollection()
-        cache?.getCollection(delegate: self)
-        networkLoader.getCollection(delegate: self)
+        cache?.getCollectionPaginated(
+            numberOfItemsPerPage: numberOfItemsPerPage,
+            numberOfPages: numberOfPages,
+            delegate: self
+        )
+        networkLoader.getCollectionPaginated(
+            numberOfItemsPerPage: numberOfItemsPerPage,
+            numberOfPages: numberOfPages,
+            delegate: self
+        )
     }
 }
 
