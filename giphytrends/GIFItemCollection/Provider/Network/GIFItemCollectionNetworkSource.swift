@@ -1,20 +1,25 @@
-import Foundation
+import Alamofire
 
 class GIFItemCollectionNetworkSource: NSObject, GIFItemCollectionSource {
     
+    private static let apiKeyParameterKey = "api_key"
+    private static let itemCountOffsetParameterKey = "offset"
+    private static let itemCountLimitParameterKey = "limit"
     @IBOutlet weak var apiKeyStorage: NetworkSourceAPIKeyStorage!
     @IBOutlet weak var configuration: NetworkSourceConfiguration!
     
-    private var numberOfItemsPerPage: Int {
-        get {
-            return configuration.numberOfItemsPerPage
-        }
-    }
-    private var numberOfPages: Int {
-        get {
-            return configuration.numberOfPages
-        }
-    }
+    private lazy var endpointURL: URL = {
+        return URL(string: configuration.endpointURL)!
+    }()
+    private lazy var apiKey: String = {
+        return apiKeyStorage.apiKey
+    }()
+    private lazy var numberOfItemsPerPage: Int = {
+        return configuration.numberOfItemsPerPage
+    }()
+    private lazy var numberOfPages: Int = {
+        return configuration.numberOfPages
+    }()
     private weak var delegate: GIFItemCollectionSourceDelegate?
     private var collection: GIFItemCollection!
     
@@ -36,6 +41,22 @@ class GIFItemCollectionNetworkSource: NSObject, GIFItemCollectionSource {
 extension GIFItemCollectionNetworkSource {
     
     private func getPage(pageIndex: Int) {
-        let pageOffset = pageIndex * numberOfItemsPerPage
+        let itemCountOffset = pageIndex * numberOfItemsPerPage
+        let itemCountLimit = itemCountOffset + numberOfItemsPerPage
+        let pageParameters: Parameters = [
+            GIFItemCollectionNetworkSource.apiKeyParameterKey : apiKey,
+            GIFItemCollectionNetworkSource
+                .itemCountOffsetParameterKey : itemCountOffset,
+            GIFItemCollectionNetworkSource
+                .itemCountLimitParameterKey : itemCountLimit
+        ]
+        
+        Alamofire
+            .request(endpointURL, parameters: pageParameters)
+//            .validate()
+            .responseJSON {
+                (response) in
+                NSLog("Response JSON: \(response.result.value)")
+        }
     }
 }

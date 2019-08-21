@@ -7,6 +7,13 @@ class NetworkSourceConfiguration: NSObject {
     private static let numberOfItemsToLoadPerPageKey = "NumberOfItemsPerPage"
     private static let numberOfPagesToLoadKey = "NumberOfPagesToLoad"
     
+    var endpointURL: String {
+        get {
+            // TODO: Replace with configurable URL.
+            return "https://api.giphy.com/v1/gifs/trending"
+        }
+    }
+    
     var numberOfItemsPerPage: Int {
         get {
             return infoReader.getInt(
