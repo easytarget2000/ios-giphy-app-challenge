@@ -18,7 +18,7 @@ class GIFItemCollectionViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
         // TODO: Clean up in actual UI branch:
         provider.getCollectionFromFastestSource { (collection) in
-            NSLog(collection.description)
+//            NSLog(collection.description)
         }
     }
 

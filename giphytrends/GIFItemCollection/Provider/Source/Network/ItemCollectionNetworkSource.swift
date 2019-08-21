@@ -57,19 +57,19 @@ extension ItemCollectionNetworkSource {
                     return
                 }
                 
-                guard let items = self.parser.parsePageData(data) else {
+                let parsedPage = self.parser.parsePageData(
+                    data,
+                    pageIndex: pageIndex
+                )
+                guard let page = parsedPage else {
                     return
                 }
                 
-                self.handleItems(items, ofPage: pageIndex)
+                self.handlePage(page)
         }
     }
     
-    private func handleItems(_ items: [Item], ofPage pageIndex: Int) {
-//        delegate?.collectionSource(
-//            self,
-//            didGetItems: items,
-//            forPage: pageIndex
-//        )
+    private func handlePage(_ page: ItemCollectionPage) {
+        delegate?.collectionSource(self, didGetPage: page)
     }
 }

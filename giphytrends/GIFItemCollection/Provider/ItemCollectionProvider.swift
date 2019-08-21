@@ -56,6 +56,26 @@ extension ItemCollectionProvider {
     
     func handlePageRetrieved(page: ItemCollectionPage) {
         pages.append(page)
-//        callback?(collection)
+        
+        let sortedPages = pages.sorted { (page1, page2) -> Bool in
+            return page1.index < page2.index
+        }
+        
+        let collection = sortedPages.reduce(into: ItemCollection()) {
+            (collection, page) in
+            let pageFirstItemIndex = page.index * numberOfItemsPerPage
+            
+            if collection.count == pageFirstItemIndex {
+                collection.append(contentsOf: page.items)
+            }
+        }
+        callback?(collection)
+        
+        #if DEBUG
+            let debugMessage = "DEBUG: ItemCollectionProvider"
+                + ".handlePageRetrieved(): page: \(page.index), "
+                + "collection.count: \(collection.count)"
+            NSLog(debugMessage)
+        #endif
     }
 }
