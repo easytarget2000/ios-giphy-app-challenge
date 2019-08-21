@@ -8,7 +8,7 @@ class ItemCollectionNetworkSourceConfiguration: NSObject {
     var endpointURL: String {
         get {
             return infoReader.get(
-                key: ItemCollectionProviderConfiguration.apiKeyKey
+                key: ItemCollectionNetworkSourceConfiguration.apiKeyKey
             )
         }
     }
