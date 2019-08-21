@@ -3,6 +3,8 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class GIFItemCollectionViewController: UICollectionViewController {
+    
+    @IBOutlet weak var provider: GIFItemCollectionProvider!
 
     override func viewDidLoad() {
         super.viewDidLoad()
