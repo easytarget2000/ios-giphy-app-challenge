@@ -2,8 +2,10 @@ import Foundation
 
 class InfoReader: NSObject {
     
+    var infoDictionary = Bundle.main.infoDictionary!
+    
     func getInt(key: String) -> Int {
-        return 0
+        return infoDictionary[key] as! Int
     }
     
 }
