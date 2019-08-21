@@ -20,12 +20,13 @@
 		30934D46230C803B00CA57C9 /* GIFItemCollectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D45230C803B00CA57C9 /* GIFItemCollectionProvider.swift */; };
 		30934D4A230C80E400CA57C9 /* GIFItemCollectionNetworkSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D49230C80E400CA57C9 /* GIFItemCollectionNetworkSource.swift */; };
 		30934D4C230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4B230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift */; };
-		30934D4E230C849E00CA57C9 /* NetworkSourceAPIKeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4D230C849E00CA57C9 /* NetworkSourceAPIKeyStorage.swift */; };
+		30934D4E230C849E00CA57C9 /* GIFItemCollectionNetworkSourceAPIKeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4D230C849E00CA57C9 /* GIFItemCollectionNetworkSourceAPIKeyStorage.swift */; };
 		30934D50230C84F100CA57C9 /* InfoReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4F230C84F100CA57C9 /* InfoReader.swift */; };
-		30934D52230C856300CA57C9 /* NetworkSourceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D51230C856300CA57C9 /* NetworkSourceConfiguration.swift */; };
+		30934D52230C856300CA57C9 /* GIFItemCollectionNetworkSourceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D51230C856300CA57C9 /* GIFItemCollectionNetworkSourceConfiguration.swift */; };
 		30934D58230C8B6A00CA57C9 /* GIFItemCollectionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D57230C8B6A00CA57C9 /* GIFItemCollectionSource.swift */; };
 		30C07E04230DA69700568ABE /* GIFItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E03230DA69700568ABE /* GIFItemCollectionViewController.swift */; };
-		30C07E06230DB0C200568ABE /* NetworkResponseGIFItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E05230DB0C200568ABE /* NetworkResponseGIFItem.swift */; };
+		30C07E06230DB0C200568ABE /* GIFItemCollectionPageNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E05230DB0C200568ABE /* GIFItemCollectionPageNetworkResponse.swift */; };
+		30C07E08230DB42900568ABE /* GIFItemCollectionNetworkResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E07230DB42900568ABE /* GIFItemCollectionNetworkResponseParser.swift */; };
 		30C0CA48230C968E00CB1A6B /* GIFItemCollectionSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0CA47230C968E00CB1A6B /* GIFItemCollectionSourceDelegate.swift */; };
 		30C0CA4A230CA0F900CB1A6B /* GIFItemCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0CA49230CA0F900CB1A6B /* GIFItemCollectionTests.swift */; };
 		46B1C2FA023377107DF2754F /* Pods_giphytrendsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E3763815A0E339FCDF8A71 /* Pods_giphytrendsUITests.framework */; };
@@ -69,12 +70,13 @@
 		30934D45230C803B00CA57C9 /* GIFItemCollectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionProvider.swift; sourceTree = "<group>"; };
 		30934D49230C80E400CA57C9 /* GIFItemCollectionNetworkSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionNetworkSource.swift; sourceTree = "<group>"; };
 		30934D4B230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionProviderCallback.swift; sourceTree = "<group>"; };
-		30934D4D230C849E00CA57C9 /* NetworkSourceAPIKeyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSourceAPIKeyStorage.swift; sourceTree = "<group>"; };
+		30934D4D230C849E00CA57C9 /* GIFItemCollectionNetworkSourceAPIKeyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionNetworkSourceAPIKeyStorage.swift; sourceTree = "<group>"; };
 		30934D4F230C84F100CA57C9 /* InfoReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoReader.swift; sourceTree = "<group>"; };
-		30934D51230C856300CA57C9 /* NetworkSourceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSourceConfiguration.swift; sourceTree = "<group>"; };
+		30934D51230C856300CA57C9 /* GIFItemCollectionNetworkSourceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionNetworkSourceConfiguration.swift; sourceTree = "<group>"; };
 		30934D57230C8B6A00CA57C9 /* GIFItemCollectionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionSource.swift; sourceTree = "<group>"; };
 		30C07E03230DA69700568ABE /* GIFItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
-		30C07E05230DB0C200568ABE /* NetworkResponseGIFItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseGIFItem.swift; sourceTree = "<group>"; };
+		30C07E05230DB0C200568ABE /* GIFItemCollectionPageNetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionPageNetworkResponse.swift; sourceTree = "<group>"; };
+		30C07E07230DB42900568ABE /* GIFItemCollectionNetworkResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionNetworkResponseParser.swift; sourceTree = "<group>"; };
 		30C0CA47230C968E00CB1A6B /* GIFItemCollectionSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionSourceDelegate.swift; sourceTree = "<group>"; };
 		30C0CA49230CA0F900CB1A6B /* GIFItemCollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionTests.swift; sourceTree = "<group>"; };
 		4156C31AA40ED0EB43353F9C /* Pods-giphytrendsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giphytrendsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-giphytrendsUITests/Pods-giphytrendsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -207,10 +209,11 @@
 		30934D53230C868900CA57C9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				30C07E07230DB42900568ABE /* GIFItemCollectionNetworkResponseParser.swift */,
 				30934D49230C80E400CA57C9 /* GIFItemCollectionNetworkSource.swift */,
-				30934D4D230C849E00CA57C9 /* NetworkSourceAPIKeyStorage.swift */,
-				30934D51230C856300CA57C9 /* NetworkSourceConfiguration.swift */,
-				30C07E05230DB0C200568ABE /* NetworkResponseGIFItem.swift */,
+				30C07E05230DB0C200568ABE /* GIFItemCollectionPageNetworkResponse.swift */,
+				30934D4D230C849E00CA57C9 /* GIFItemCollectionNetworkSourceAPIKeyStorage.swift */,
+				30934D51230C856300CA57C9 /* GIFItemCollectionNetworkSourceConfiguration.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -481,16 +484,17 @@
 			files = (
 				30934D58230C8B6A00CA57C9 /* GIFItemCollectionSource.swift in Sources */,
 				30C0CA48230C968E00CB1A6B /* GIFItemCollectionSourceDelegate.swift in Sources */,
-				30934D4E230C849E00CA57C9 /* NetworkSourceAPIKeyStorage.swift in Sources */,
-				30934D52230C856300CA57C9 /* NetworkSourceConfiguration.swift in Sources */,
+				30934D4E230C849E00CA57C9 /* GIFItemCollectionNetworkSourceAPIKeyStorage.swift in Sources */,
+				30934D52230C856300CA57C9 /* GIFItemCollectionNetworkSourceConfiguration.swift in Sources */,
 				30934D50230C84F100CA57C9 /* InfoReader.swift in Sources */,
-				30C07E06230DB0C200568ABE /* NetworkResponseGIFItem.swift in Sources */,
+				30C07E06230DB0C200568ABE /* GIFItemCollectionPageNetworkResponse.swift in Sources */,
 				30C07E04230DA69700568ABE /* GIFItemCollectionViewController.swift in Sources */,
 				30934D44230C7FE900CA57C9 /* GIFItemCollection.swift in Sources */,
 				30934D4C230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift in Sources */,
 				30934D4A230C80E400CA57C9 /* GIFItemCollectionNetworkSource.swift in Sources */,
 				30934D46230C803B00CA57C9 /* GIFItemCollectionProvider.swift in Sources */,
 				30934D42230C7FAB00CA57C9 /* GIFItem.swift in Sources */,
+				30C07E08230DB42900568ABE /* GIFItemCollectionNetworkResponseParser.swift in Sources */,
 				30934D0B230C5CF600CA57C9 /* AppDelegate.swift in Sources */,
 				30934D40230C7F8D00CA57C9 /* GIFItemCollectionPage.swift in Sources */,
 			);

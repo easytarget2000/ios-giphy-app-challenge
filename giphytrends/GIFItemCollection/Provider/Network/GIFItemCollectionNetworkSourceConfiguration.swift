@@ -1,17 +1,17 @@
 import Foundation
 
-class NetworkSourceConfiguration: NSObject {
+class GIFItemCollectionNetworkSourceConfiguration: NSObject {
     
     @IBOutlet weak var infoReader: InfoReader!
     
-    private static let apiKeyKey = "GIPHYTrendingEnddpointURL"
+    private static let apiKeyKey = "GIPHYTrendingEndpointURL"
     private static let numberOfItemsToLoadPerPageKey = "NumberOfItemsPerPage"
     private static let numberOfPagesToLoadKey = "NumberOfPagesToLoad"
     
     var endpointURL: String {
         get {
             return infoReader.get(
-                key: NetworkSourceConfiguration.apiKeyKey
+                key: GIFItemCollectionNetworkSourceConfiguration.apiKeyKey
             )
         }
     }
@@ -19,7 +19,8 @@ class NetworkSourceConfiguration: NSObject {
     var numberOfItemsPerPage: Int {
         get {
             return infoReader.get(
-                key: NetworkSourceConfiguration.numberOfItemsToLoadPerPageKey
+                key: GIFItemCollectionNetworkSourceConfiguration
+                    .numberOfItemsToLoadPerPageKey
             )
         }
     }
@@ -27,7 +28,8 @@ class NetworkSourceConfiguration: NSObject {
     var numberOfPages: Int {
         get {
             return infoReader.get(
-                key: NetworkSourceConfiguration.numberOfPagesToLoadKey
+                key: GIFItemCollectionNetworkSourceConfiguration
+                    .numberOfPagesToLoadKey
             )
         }
     }

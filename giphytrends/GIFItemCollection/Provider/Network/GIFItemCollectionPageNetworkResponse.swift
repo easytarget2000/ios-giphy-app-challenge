@@ -1,4 +1,4 @@
-struct GIFItemCollectionNetworkResponse: Codable {
+struct GIFItemCollectionPageNetworkResponse: Codable {
     
     let data: [GIFItemNetworkResponse]
     

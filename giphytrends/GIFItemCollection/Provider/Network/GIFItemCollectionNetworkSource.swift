@@ -5,8 +5,11 @@ class GIFItemCollectionNetworkSource: NSObject, GIFItemCollectionSource {
     private static let apiKeyParameterKey = "api_key"
     private static let itemCountOffsetParameterKey = "offset"
     private static let itemCountLimitParameterKey = "limit"
-    @IBOutlet weak var apiKeyStorage: NetworkSourceAPIKeyStorage!
-    @IBOutlet weak var configuration: NetworkSourceConfiguration!
+    @IBOutlet weak var apiKeyStorage:
+        GIFItemCollectionNetworkSourceAPIKeyStorage!
+    @IBOutlet weak var configuration:
+        GIFItemCollectionNetworkSourceConfiguration!
+    @IBOutlet weak var parser: GIFItemCollectionNetworkResponseParser!
     
     private lazy var endpointURL: URL = {
         return URL(string: configuration.endpointURL)!
@@ -56,7 +59,11 @@ extension GIFItemCollectionNetworkSource {
             .validate()
             .responseJSON {
                 (response) in
-                NSLog("Response JSON: \(response.result.value)")
+                guard let data = response.data else {
+                    return
+                }
+                
+                self.parser.parsePageData(data)
         }
     }
 }
