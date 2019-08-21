@@ -45,13 +45,12 @@ extension GIFItemCollectionNetworkSource {
     
     private func getPage(pageIndex: Int) {
         let itemCountOffset = pageIndex * numberOfItemsPerPage
-        let itemCountLimit = itemCountOffset + numberOfItemsPerPage
         let pageParameters: Parameters = [
             GIFItemCollectionNetworkSource.apiKeyParameterKey : apiKey,
             GIFItemCollectionNetworkSource
                 .itemCountOffsetParameterKey : itemCountOffset,
             GIFItemCollectionNetworkSource
-                .itemCountLimitParameterKey : itemCountLimit
+                .itemCountLimitParameterKey : numberOfItemsPerPage
         ]
         
         Alamofire

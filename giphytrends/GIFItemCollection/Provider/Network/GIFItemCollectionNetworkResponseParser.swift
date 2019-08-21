@@ -12,7 +12,9 @@ import Foundation
                 from: data
             )
             items = responseCollection.data.map({ (responseItem) -> GIFItem in
-                return GIFItem(responseItem.)
+                let fullURL = responseItem.url
+                let previewURL = responseItem.images.fixed_height_small.url
+                return GIFItem(fullURL: fullURL, previewURL: previewURL)
             })
         } catch let error {
             NSLog(
