@@ -1,29 +1,29 @@
 import Foundation
 
-@objc class GIFItemCollectionNetworkResponseParser: NSObject {
+@objc class ItemCollectionNetworkResponseParser: NSObject {
     
     var jsonDecoder: JSONDecoder = JSONDecoder()
     
-    func parsePageData(_ data: Data) -> GIFItemCollectionPage? {
-        var items = [GIFItem]()
+    func parsePageData(_ data: Data) -> ItemCollectionPage? {
+        var items = [Item]()
         do {
             let responseCollection = try self.jsonDecoder.decode(
-                GIFItemCollectionPageNetworkResponse.self,
+                ItemCollectionPageNetworkResponse.self,
                 from: data
             )
-            items = responseCollection.data.map({ (responseItem) -> GIFItem in
+            items = responseCollection.data.map({ (responseItem) -> Item in
                 let fullURL = responseItem.url
                 let previewURL = responseItem.images.fixed_height_small.url
-                return GIFItem(fullURL: fullURL, previewURL: previewURL)
+                return Item(fullURL: fullURL, previewURL: previewURL)
             })
         } catch let error {
             NSLog(
-                "ERROR: GIFItemCollectionNetworkSource: "
+                "ERROR: ItemCollectionNetworkSource: "
                     + error.localizedDescription
             )
             return nil
         }
         
-        return GIFItemCollectionPage(items: items)
+        return ItemCollectionPage(items: items)
     }
 }

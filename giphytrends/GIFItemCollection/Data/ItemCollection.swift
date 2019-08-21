@@ -1,6 +1,6 @@
-class GIFItemCollection {
+class ItemCollection {
     
-    var pages = [GIFItemCollectionPage?]()
+    var pages = [ItemCollectionPage?]()
     var numberOfItems: Int {
         get {
             return pages.reduce(
@@ -15,7 +15,7 @@ class GIFItemCollection {
         }
     }
     
-    func getItemAtIndex(_ index: Int) -> GIFItem? {
+    func getItemAtIndex(_ index: Int) -> Item? {
         guard index >= 0 else {
             return nil
         }

@@ -42,25 +42,25 @@
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdZ-NL-DWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="hZK-Xr-40s" customClass="GIFItemCollectionProvider" customModule="giphytrends" customModuleProvider="target">
+                <customObject id="hZK-Xr-40s" customClass="ItemCollectionProvider" customModule="giphytrends" customModuleProvider="target">
                     <connections>
                         <outlet property="networkLoader" destination="n5L-r3-cD8" id="lJP-G6-3K7"/>
                     </connections>
                 </customObject>
-                <customObject id="n5L-r3-cD8" customClass="GIFItemCollectionNetworkSource" customModule="giphytrends" customModuleProvider="target">
+                <customObject id="n5L-r3-cD8" customClass="ItemCollectionNetworkSource" customModule="giphytrends" customModuleProvider="target">
                     <connections>
                         <outlet property="apiKeyStorage" destination="j7W-qv-3lk" id="YIv-jC-715"/>
                         <outlet property="configuration" destination="NNE-Ew-N6h" id="CWn-GE-l6x"/>
                         <outlet property="parser" destination="v2K-1S-F7d" id="Q2O-uj-Wxg"/>
                     </connections>
                 </customObject>
-                <customObject id="j7W-qv-3lk" customClass="GIFItemCollectionNetworkSourceAPIKeyStorage" customModule="giphytrends" customModuleProvider="target"/>
-                <customObject id="NNE-Ew-N6h" customClass="GIFItemCollectionNetworkSourceConfiguration" customModule="giphytrends" customModuleProvider="target">
+                <customObject id="j7W-qv-3lk" customClass="ItemCollectionNetworkSourceAPIKeyStorage" customModule="giphytrends" customModuleProvider="target"/>
+                <customObject id="NNE-Ew-N6h" customClass="ItemCollectionNetworkSourceConfiguration" customModule="giphytrends" customModuleProvider="target">
                     <connections>
                         <outlet property="infoReader" destination="GJq-Hl-Ajz" id="Nbi-cP-p4U"/>
                     </connections>
                 </customObject>
-                <customObject id="v2K-1S-F7d" customClass="GIFItemCollectionNetworkResponseParser" customModule="giphytrends" customModuleProvider="target"/>
+                <customObject id="v2K-1S-F7d" customClass="ItemCollectionNetworkResponseParser" customModule="giphytrends" customModuleProvider="target"/>
                 <customObject id="GJq-Hl-Ajz" customClass="InfoReader" customModule="giphytrends" customModuleProvider="target"/>
             </objects>
         </scene>

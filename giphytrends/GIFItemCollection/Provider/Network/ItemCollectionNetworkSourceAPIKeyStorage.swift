@@ -1,7 +1,5 @@
 import Foundation
 
-class GIFItemCollectionNetworkSourceAPIKeyStorage: NSObject {
-    
+class ItemCollectionNetworkSourceAPIKeyStorage: NSObject {
     let apiKey = "VLs4mdShDXJYEKSGd1tzQFDYwFjMSoaJ"
-    
 }

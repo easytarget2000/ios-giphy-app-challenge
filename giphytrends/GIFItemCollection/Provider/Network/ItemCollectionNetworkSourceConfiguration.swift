@@ -1,6 +1,6 @@
 import Foundation
 
-class GIFItemCollectionNetworkSourceConfiguration: NSObject {
+class ItemCollectionNetworkSourceConfiguration: NSObject {
     
     @IBOutlet weak var infoReader: InfoReader!
     
@@ -11,7 +11,7 @@ class GIFItemCollectionNetworkSourceConfiguration: NSObject {
     var endpointURL: String {
         get {
             return infoReader.get(
-                key: GIFItemCollectionNetworkSourceConfiguration.apiKeyKey
+                key: ItemCollectionNetworkSourceConfiguration.apiKeyKey
             )
         }
     }
@@ -19,7 +19,7 @@ class GIFItemCollectionNetworkSourceConfiguration: NSObject {
     var numberOfItemsPerPage: Int {
         get {
             return infoReader.get(
-                key: GIFItemCollectionNetworkSourceConfiguration
+                key: ItemCollectionNetworkSourceConfiguration
                     .numberOfItemsToLoadPerPageKey
             )
         }
@@ -28,7 +28,7 @@ class GIFItemCollectionNetworkSourceConfiguration: NSObject {
     var numberOfPages: Int {
         get {
             return infoReader.get(
-                key: GIFItemCollectionNetworkSourceConfiguration
+                key: ItemCollectionNetworkSourceConfiguration
                     .numberOfPagesToLoadKey
             )
         }

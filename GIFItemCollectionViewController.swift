@@ -4,7 +4,7 @@ private let reuseIdentifier = "Cell"
 
 class GIFItemCollectionViewController: UICollectionViewController {
     
-    @IBOutlet weak var provider: GIFItemCollectionProvider!
+    @IBOutlet weak var provider: ItemCollectionProvider!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,15 +1,15 @@
 import Alamofire
 
-class GIFItemCollectionNetworkSource: NSObject, GIFItemCollectionSource {
+class ItemCollectionNetworkSource: NSObject, ItemCollectionSource {
     
     private static let apiKeyParameterKey = "api_key"
     private static let itemCountOffsetParameterKey = "offset"
     private static let itemCountLimitParameterKey = "limit"
     @IBOutlet weak var apiKeyStorage:
-        GIFItemCollectionNetworkSourceAPIKeyStorage!
+        ItemCollectionNetworkSourceAPIKeyStorage!
     @IBOutlet weak var configuration:
-        GIFItemCollectionNetworkSourceConfiguration!
-    @IBOutlet weak var parser: GIFItemCollectionNetworkResponseParser!
+        ItemCollectionNetworkSourceConfiguration!
+    @IBOutlet weak var parser: ItemCollectionNetworkResponseParser!
     
     private lazy var endpointURL: URL = {
         return URL(string: configuration.endpointURL)!
@@ -23,10 +23,10 @@ class GIFItemCollectionNetworkSource: NSObject, GIFItemCollectionSource {
     private lazy var numberOfPages: Int = {
         return configuration.numberOfPages
     }()
-    private weak var delegate: GIFItemCollectionSourceDelegate?
+    private weak var delegate: ItemCollectionSourceDelegate?
     
     func getCollection(
-        delegate: GIFItemCollectionSourceDelegate?
+        delegate: ItemCollectionSourceDelegate?
     ) {
         self.delegate = delegate
         
@@ -39,15 +39,15 @@ class GIFItemCollectionNetworkSource: NSObject, GIFItemCollectionSource {
 
 // MARK: - Implementations
 
-extension GIFItemCollectionNetworkSource {
+extension ItemCollectionNetworkSource {
     
     private func getPage(pageIndex: Int) {
         let itemCountOffset = pageIndex * numberOfItemsPerPage
         let pageParameters: Parameters = [
-            GIFItemCollectionNetworkSource.apiKeyParameterKey : apiKey,
-            GIFItemCollectionNetworkSource
+            ItemCollectionNetworkSource.apiKeyParameterKey : apiKey,
+            ItemCollectionNetworkSource
                 .itemCountOffsetParameterKey : itemCountOffset,
-            GIFItemCollectionNetworkSource
+            ItemCollectionNetworkSource
                 .itemCountLimitParameterKey : numberOfItemsPerPage
         ]
         
@@ -69,7 +69,7 @@ extension GIFItemCollectionNetworkSource {
     }
     
     private func handlePage(
-        _ page: GIFItemCollectionPage,
+        _ page: ItemCollectionPage,
         atIndex pageIndex: Int
     ) {
         delegate?.collectionSource(
