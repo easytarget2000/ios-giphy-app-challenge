@@ -2,7 +2,7 @@
 Coding Challenge: A mobile app that shows the currently trending content from GIPHY.
 
 ## Build Instructions
-The app has been developed in Xcode 10.3 using Swift 5 with a deployment target of iOS 12.0. [CocoaPods](https://github.com/CocoaPods/CocoaPods) is required to install the library [Alamofire](https://github.com/Alamofire/Alamofire). Install CocoaPods, for example with [brew](https://github.com/Homebrew/brew) `brew install cocoapods`, change into the root directory of the project and run `pod install`. This fetches the dependencies and places them in the Workspace. Open the project throug `giphytrends.workspace` and run the Photo Challenge target in Xcode on an iPhone or iPad running iOS 12.0 or later.
+The app has been developed in Xcode 10.3 using Swift 5 with a deployment target of iOS 12.0. [CocoaPods](https://github.com/CocoaPods/CocoaPods) is required to install the library [Alamofire](https://github.com/Alamofire/Alamofire). Install CocoaPods, for example with [brew](https://github.com/Homebrew/brew) `brew install cocoapods`, change into the root directory of the project and run `pod install`. This fetches the dependencies and places them in the Workspace. Open the project throug `giphytrends.workspace` and run the `giphytrends` target in Xcode on an iPhone or iPad running iOS 12.0 or later.
 
 ## Development Approach
 I started working on this take home test by separating the task description into small issues. These issues filled up a simple [kanban board](https://github.com/easytargetmixel/ios-giphy-app-challenge/projects/1), along with my initial thoughts and ideas in the issue descriptions. 
