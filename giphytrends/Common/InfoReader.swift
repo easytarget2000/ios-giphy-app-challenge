@@ -4,8 +4,8 @@ class InfoReader: NSObject {
     
     var infoDictionary = Bundle.main.infoDictionary!
     
-    func getInt(key: String) -> Int {
-        return infoDictionary[key] as! Int
+    func get<T>(key: String) -> T {
+        return infoDictionary[key] as! T
     }
     
 }

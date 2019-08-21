@@ -4,19 +4,21 @@ class NetworkSourceConfiguration: NSObject {
     
     @IBOutlet weak var infoReader: InfoReader!
     
+    private static let apiKeyKey = "GIPHYTrendingEnddpointURL"
     private static let numberOfItemsToLoadPerPageKey = "NumberOfItemsPerPage"
     private static let numberOfPagesToLoadKey = "NumberOfPagesToLoad"
     
     var endpointURL: String {
         get {
-            // TODO: Replace with configurable URL.
-            return "https://api.giphy.com/v1/gifs/trending"
+            return infoReader.get(
+                key: NetworkSourceConfiguration.apiKeyKey
+            )
         }
     }
     
     var numberOfItemsPerPage: Int {
         get {
-            return infoReader.getInt(
+            return infoReader.get(
                 key: NetworkSourceConfiguration.numberOfItemsToLoadPerPageKey
             )
         }
@@ -24,7 +26,7 @@ class NetworkSourceConfiguration: NSObject {
     
     var numberOfPages: Int {
         get {
-            return infoReader.getInt(
+            return infoReader.get(
                 key: NetworkSourceConfiguration.numberOfPagesToLoadKey
             )
         }

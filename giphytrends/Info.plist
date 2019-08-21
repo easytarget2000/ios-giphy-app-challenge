@@ -20,6 +20,8 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>GIPHYTrendingEndpointURL</key>
+	<string>https://api.giphy.com/v1/gifs/trending</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NumberOfItemsPerPage</key>

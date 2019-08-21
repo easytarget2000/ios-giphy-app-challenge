@@ -53,7 +53,7 @@ extension GIFItemCollectionNetworkSource {
         
         Alamofire
             .request(endpointURL, parameters: pageParameters)
-//            .validate()
+            .validate()
             .responseJSON {
                 (response) in
                 NSLog("Response JSON: \(response.result.value)")
