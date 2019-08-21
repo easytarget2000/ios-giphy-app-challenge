@@ -236,10 +236,10 @@
 		30934D55230C882000CA57C9 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
-				30C07E0D230DF98500568ABE /* Source */,
 				30934D45230C803B00CA57C9 /* ItemCollectionProvider.swift */,
 				30934D4B230C812800CA57C9 /* ItemCollectionProviderCallback.swift */,
 				30934D51230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift */,
+				30C07E0D230DF98500568ABE /* Source */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
