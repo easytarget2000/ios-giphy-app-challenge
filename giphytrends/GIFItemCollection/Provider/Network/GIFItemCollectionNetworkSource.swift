@@ -24,13 +24,11 @@ class GIFItemCollectionNetworkSource: NSObject, GIFItemCollectionSource {
         return configuration.numberOfPages
     }()
     private weak var delegate: GIFItemCollectionSourceDelegate?
-    private var collection: GIFItemCollection!
     
     func getCollection(
         delegate: GIFItemCollectionSourceDelegate?
     ) {
         self.delegate = delegate
-        collection = GIFItemCollection()
         
         for pageIndex in 0 ..< numberOfPages {
             getPage(pageIndex: pageIndex)
@@ -62,7 +60,22 @@ extension GIFItemCollectionNetworkSource {
                     return
                 }
                 
-                self.parser.parsePageData(data)
+                guard let page = self.parser.parsePageData(data) else {
+                    return
+                }
+                
+                self.handlePage(page, atIndex: pageIndex)
         }
+    }
+    
+    private func handlePage(
+        _ page: GIFItemCollectionPage,
+        atIndex pageIndex: Int
+    ) {
+        delegate?.collectionSource(
+            self,
+            didGetPage: page,
+            atIndex: pageIndex
+        )
     }
 }
