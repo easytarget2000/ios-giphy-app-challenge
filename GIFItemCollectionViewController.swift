@@ -1,16 +1,8 @@
-//
-//  GIFItetmCollectionViewController.swift
-//  giphytrends
-//
-//  Created by Mitch on 21.08.19.
-//  Copyright © 2019 Easy Target. All rights reserved.
-//
-
 import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class GIFItetmCollectionViewController: UICollectionViewController {
+class GIFItemCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
