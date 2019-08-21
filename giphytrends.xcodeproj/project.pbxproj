@@ -206,7 +206,7 @@
 			children = (
 				30934D56230C883800CA57C9 /* UI */,
 				30934D55230C882000CA57C9 /* Provider */,
-				30934D54230C869C00CA57C9 /* Data */,
+				30934D54230C869C00CA57C9 /* Model */,
 			);
 			path = GIFItemCollection;
 			sourceTree = "<group>";
@@ -224,24 +224,22 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		30934D54230C869C00CA57C9 /* Data */ = {
+		30934D54230C869C00CA57C9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				30934D41230C7FAB00CA57C9 /* Item.swift */,
 				30934D43230C7FE900CA57C9 /* ItemCollection.swift */,
 			);
-			path = Data;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		30934D55230C882000CA57C9 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				30C07E0D230DF98500568ABE /* Source */,
 				30934D45230C803B00CA57C9 /* ItemCollectionProvider.swift */,
 				30934D4B230C812800CA57C9 /* ItemCollectionProviderCallback.swift */,
-				30934D57230C8B6A00CA57C9 /* ItemCollectionSource.swift */,
-				30C0CA47230C968E00CB1A6B /* ItemCollectionSourceDelegate.swift */,
 				30934D51230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift */,
-				30934D53230C868900CA57C9 /* Network */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -254,6 +252,16 @@
 			name = UI;
 			path = giphytrends/GIFItemCollection/UI;
 			sourceTree = SOURCE_ROOT;
+		};
+		30C07E0D230DF98500568ABE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				30934D57230C8B6A00CA57C9 /* ItemCollectionSource.swift */,
+				30C0CA47230C968E00CB1A6B /* ItemCollectionSourceDelegate.swift */,
+				30934D53230C868900CA57C9 /* Network */,
+			);
+			path = Source;
+			sourceTree = "<group>";
 		};
 		51E9A40DD31EFBDB0893333F /* Frameworks */ = {
 			isa = PBXGroup;

@@ -24,7 +24,8 @@ extension ItemCollectionProvider {
         callback: @escaping ItemCollectionProviderCallback
     ) {
         self.callback = callback
-        collection = ItemCollection()
+        let maxNumberOfItems = numberOfPages * numberOfItemsPerPage
+        collection = ItemCollection(capacity: maxNumberOfItems)
         cache?.getCollectionPaginated(
             numberOfItemsPerPage: numberOfItemsPerPage,
             numberOfPages: numberOfPages,
