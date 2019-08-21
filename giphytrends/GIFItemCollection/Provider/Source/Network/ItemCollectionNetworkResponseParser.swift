@@ -4,8 +4,8 @@ import Foundation
     
     var jsonDecoder: JSONDecoder = JSONDecoder()
     
-    func parsePageData(_ data: Data) -> ItemCollectionPage? {
-        var items = [Item]()
+    func parsePageData(_ data: Data) -> [Item]? {
+        var items: [Item]?
         do {
             let responseCollection = try self.jsonDecoder.decode(
                 ItemCollectionPageNetworkResponse.self,
@@ -21,9 +21,8 @@ import Foundation
                 "ERROR: ItemCollectionNetworkSource: "
                     + error.localizedDescription
             )
-            return nil
         }
         
-        return ItemCollectionPage(items: items)
+        return items
     }
 }

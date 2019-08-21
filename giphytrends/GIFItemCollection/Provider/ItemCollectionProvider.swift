@@ -11,7 +11,7 @@ class ItemCollectionProvider: NSObject {
     private lazy var numberOfPages: Int = {
         return configuration.numberOfPages
     }()
-    private var collection = ItemCollection()
+    private var pages = [ItemCollectionPage]()
     private var callback: ItemCollectionProviderCallback?
     
 }
@@ -24,8 +24,7 @@ extension ItemCollectionProvider {
         callback: @escaping ItemCollectionProviderCallback
     ) {
         self.callback = callback
-        let maxNumberOfItems = numberOfPages * numberOfItemsPerPage
-        collection = ItemCollection(capacity: maxNumberOfItems)
+        pages = [ItemCollectionPage]()
         cache?.getCollectionPaginated(
             numberOfItemsPerPage: numberOfItemsPerPage,
             numberOfPages: numberOfPages,
@@ -45,10 +44,9 @@ extension ItemCollectionProvider: ItemCollectionSourceDelegate {
     
     func collectionSource(
         _ collectionSource: ItemCollectionSource,
-        didGetPage collectionPage: ItemCollectionPage,
-        atIndex index: Int
+        didGetPage page: ItemCollectionPage
     ) {
-        handlePageRetrieved(collectionPage: collectionPage, index: index)
+        handlePageRetrieved(page: page)
     }
 }
 
@@ -56,11 +54,8 @@ extension ItemCollectionProvider: ItemCollectionSourceDelegate {
 
 extension ItemCollectionProvider {
     
-    func handlePageRetrieved(
-        collectionPage: ItemCollectionPage,
-        index: Int
-    ) {
-        collection.pages[index] = collectionPage
-        callback?(collection)
+    func handlePageRetrieved(page: ItemCollectionPage) {
+        pages.append(page)
+//        callback?(collection)
     }
 }

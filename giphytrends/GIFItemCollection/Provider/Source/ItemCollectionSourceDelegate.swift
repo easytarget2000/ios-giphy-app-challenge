@@ -4,7 +4,6 @@ import Foundation
     
     func collectionSource(
         _ collectionSource: ItemCollectionSource,
-        didGetPage collectionPage: ItemCollectionPage,
-        atIndex index: Int
+        didGetPage page: ItemCollectionPage
     )
 }
