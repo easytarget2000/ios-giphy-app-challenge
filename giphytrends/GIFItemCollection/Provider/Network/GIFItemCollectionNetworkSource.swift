@@ -37,7 +37,5 @@ extension GIFItemCollectionNetworkSource {
     
     private func getPage(pageIndex: Int) {
         let pageOffset = pageIndex * numberOfItemsPerPage
-        
-        delegate?.collectionSource(self, didGetCollection: collection)
     }
 }

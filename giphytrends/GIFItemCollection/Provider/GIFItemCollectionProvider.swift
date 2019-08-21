@@ -4,7 +4,7 @@ class GIFItemCollectionProvider: NSObject {
     
     @IBOutlet weak var cache: GIFItemCollectionSource?
     @IBOutlet weak var networkLoader: GIFItemCollectionSource!
-    private var didGetCollectionFromCache = false
+    private var collection = GIFItemCollection()
     private var callback: GIFItemCollectionProviderCallback?
 }
 
@@ -16,6 +16,7 @@ extension GIFItemCollectionProvider {
         callback: @escaping GIFItemCollectionProviderCallback
     ) {
         self.callback = callback
+        collection = GIFItemCollection()
         cache?.getCollection(delegate: self)
         networkLoader.getCollection(delegate: self)
     }
@@ -27,10 +28,22 @@ extension GIFItemCollectionProvider: GIFItemCollectionSourceDelegate {
     
     func collectionSource(
         _ collectionSource: GIFItemCollectionSource,
-        didGetCollection collection: GIFItemCollection
+        didGetPage collectionPage: GIFItemCollectionPage,
+        atIndex index: Int
     ) {
-        callback?(collection)
-        callback = nil
+        handlePageRetrieved(collectionPage: collectionPage, index: index)
     }
+}
+
+// MARK: - Implementations
+
+extension GIFItemCollectionProvider {
     
+    func handlePageRetrieved(
+        collectionPage: GIFItemCollectionPage,
+        index: Int
+    ) {
+        collection.pages[index] = collectionPage
+        callback?(collection)
+    }
 }
