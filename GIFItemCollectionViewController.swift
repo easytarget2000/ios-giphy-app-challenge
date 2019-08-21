@@ -16,6 +16,10 @@ class GIFItemCollectionViewController: UICollectionViewController {
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+        // TODO: Clean up in actual UI branch:
+        provider.getCollectionFromFastestSource { (collection) in
+            NSLog(collection.pages.description)
+        }
     }
 
     /*
