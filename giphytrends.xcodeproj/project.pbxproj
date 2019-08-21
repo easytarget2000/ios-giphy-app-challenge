@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		30934D0B230C5CF600CA57C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D0A230C5CF600CA57C9 /* AppDelegate.swift */; };
-		30934D0D230C5CF600CA57C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D0C230C5CF600CA57C9 /* ViewController.swift */; };
 		30934D10230C5CF600CA57C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30934D0E230C5CF600CA57C9 /* Main.storyboard */; };
 		30934D12230C5CF700CA57C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30934D11230C5CF700CA57C9 /* Assets.xcassets */; };
 		30934D15230C5CF700CA57C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30934D13230C5CF700CA57C9 /* LaunchScreen.storyboard */; };
@@ -24,6 +23,7 @@
 		30934D50230C84F100CA57C9 /* InfoReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4F230C84F100CA57C9 /* InfoReader.swift */; };
 		30934D52230C856300CA57C9 /* NetworkSourceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D51230C856300CA57C9 /* NetworkSourceConfiguration.swift */; };
 		30934D58230C8B6A00CA57C9 /* GIFItemCollectionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D57230C8B6A00CA57C9 /* GIFItemCollectionSource.swift */; };
+		30C07E04230DA69700568ABE /* GIFItetmCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E03230DA69700568ABE /* GIFItetmCollectionViewController.swift */; };
 		30C0CA48230C968E00CB1A6B /* GIFItemCollectionSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0CA47230C968E00CB1A6B /* GIFItemCollectionSourceDelegate.swift */; };
 		30C0CA4A230CA0F900CB1A6B /* GIFItemCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0CA49230CA0F900CB1A6B /* GIFItemCollectionTests.swift */; };
 /* End PBXBuildFile section */
@@ -48,7 +48,6 @@
 /* Begin PBXFileReference section */
 		30934D07230C5CF600CA57C9 /* giphytrends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giphytrends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30934D0A230C5CF600CA57C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30934D0C230C5CF600CA57C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		30934D0F230C5CF600CA57C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30934D11230C5CF700CA57C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30934D14230C5CF700CA57C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		30934D4F230C84F100CA57C9 /* InfoReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoReader.swift; sourceTree = "<group>"; };
 		30934D51230C856300CA57C9 /* NetworkSourceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSourceConfiguration.swift; sourceTree = "<group>"; };
 		30934D57230C8B6A00CA57C9 /* GIFItemCollectionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionSource.swift; sourceTree = "<group>"; };
+		30C07E03230DA69700568ABE /* GIFItetmCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItetmCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
 		30C0CA47230C968E00CB1A6B /* GIFItemCollectionSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionSourceDelegate.swift; sourceTree = "<group>"; };
 		30C0CA49230CA0F900CB1A6B /* GIFItemCollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,7 +124,6 @@
 				30934D3E230C7F6400CA57C9 /* GIFItemCollection */,
 				30934D3A230C5DCA00CA57C9 /* Common */,
 				30934D0A230C5CF600CA57C9 /* AppDelegate.swift */,
-				30934D0C230C5CF600CA57C9 /* ViewController.swift */,
 				30934D16230C5CF700CA57C9 /* Info.plist */,
 			);
 			path = giphytrends;
@@ -221,6 +220,7 @@
 		30934D56230C883800CA57C9 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				30C07E03230DA69700568ABE /* GIFItetmCollectionViewController.swift */,
 			);
 			name = UI;
 			path = giphytrends/GIFItemCollection/UI;
@@ -362,10 +362,10 @@
 				30934D4E230C849E00CA57C9 /* NetworkSourceAPIKeyStorage.swift in Sources */,
 				30934D52230C856300CA57C9 /* NetworkSourceConfiguration.swift in Sources */,
 				30934D50230C84F100CA57C9 /* InfoReader.swift in Sources */,
+				30C07E04230DA69700568ABE /* GIFItetmCollectionViewController.swift in Sources */,
 				30934D44230C7FE900CA57C9 /* GIFItemCollection.swift in Sources */,
 				30934D4C230C812800CA57C9 /* GIFItemCollectionProviderCallback.swift in Sources */,
 				30934D4A230C80E400CA57C9 /* GIFItemCollectionNetworkSource.swift in Sources */,
-				30934D0D230C5CF600CA57C9 /* ViewController.swift in Sources */,
 				30934D46230C803B00CA57C9 /* GIFItemCollectionProvider.swift in Sources */,
 				30934D42230C7FAB00CA57C9 /* GIFItem.swift in Sources */,
 				30934D0B230C5CF600CA57C9 /* AppDelegate.swift in Sources */,
