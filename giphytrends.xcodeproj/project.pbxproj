@@ -15,6 +15,7 @@
 		3066FC07230F4745008635AB /* ItemCollectionSelectionCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3066FC06230F4745008635AB /* ItemCollectionSelectionCallback.swift */; };
 		3066FC0D230F4943008635AB /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3066FC0C230F4943008635AB /* ItemDetailViewController.swift */; };
 		3066FC10230F49A2008635AB /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3066FC0F230F49A1008635AB /* ItemCollectionViewController.swift */; };
+		3066FC12230F4B29008635AB /* ItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3066FC11230F4B29008635AB /* ItemDetailViewModel.swift */; };
 		30934D0B230C5CF600CA57C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D0A230C5CF600CA57C9 /* AppDelegate.swift */; };
 		30934D10230C5CF600CA57C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30934D0E230C5CF600CA57C9 /* Main.storyboard */; };
 		30934D12230C5CF700CA57C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30934D11230C5CF700CA57C9 /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 		3066FC06230F4745008635AB /* ItemCollectionSelectionCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionSelectionCallback.swift; sourceTree = "<group>"; };
 		3066FC0C230F4943008635AB /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		3066FC0F230F49A1008635AB /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = "<group>"; };
+		3066FC11230F4B29008635AB /* ItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewModel.swift; sourceTree = "<group>"; };
 		30934D07230C5CF600CA57C9 /* giphytrends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giphytrends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30934D0A230C5CF600CA57C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30934D0F230C5CF600CA57C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 		3066FC0B230F491B008635AB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3066FC11230F4B29008635AB /* ItemDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 				30C07E11230DFE8000568ABE /* ItemCollectionPage.swift in Sources */,
 				30934D4A230C80E400CA57C9 /* ItemCollectionNetworkSource.swift in Sources */,
 				30217E19230F057200FEA9F7 /* Dynamic.swift in Sources */,
+				3066FC12230F4B29008635AB /* ItemDetailViewModel.swift in Sources */,
 				3066FC07230F4745008635AB /* ItemCollectionSelectionCallback.swift in Sources */,
 				30217E16230F048300FEA9F7 /* ItemCollectionCell.swift in Sources */,
 				3066FC10230F49A2008635AB /* ItemCollectionViewController.swift in Sources */,

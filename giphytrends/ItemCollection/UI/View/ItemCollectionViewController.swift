@@ -22,8 +22,10 @@ extension ItemCollectionViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let detailViewController = segue as! ItemDetailViewController
+        let detailViewController
+            = segue.destination as! ItemDetailViewController
         let item = sender as! Item
+        detailViewController.providedItem = item
     }
 }
 

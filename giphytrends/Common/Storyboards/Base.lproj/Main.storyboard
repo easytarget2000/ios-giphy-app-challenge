@@ -103,10 +103,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="AUW-r8-Jmq"/>
                     </view>
+                    <connections>
+                        <outlet property="viewModel" destination="Nz9-cW-dKd" id="aUp-VC-o4e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dvL-T2-P18" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Nz9-cW-dKd" customClass="ItemDetailViewModel" customModule="giphytrends" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="1101" y="100"/>
+            <point key="canvasLocation" x="1487" y="21"/>
         </scene>
     </scenes>
 </document>
