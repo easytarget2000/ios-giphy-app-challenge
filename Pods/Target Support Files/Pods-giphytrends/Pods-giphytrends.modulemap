@@ -1,6 +1,0 @@
-framework module Pods_giphytrends {
-  umbrella header "Pods-giphytrends-umbrella.h"
-
-  export *
-  module * { export * }
-}
