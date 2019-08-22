@@ -2,6 +2,7 @@ import UIKit
 
 class ItemCollectionViewController: UICollectionViewController {
     
+    static let toItemDetailSegueIdentifier = "ItemCollectionToItemDetail"
     @IBOutlet weak var viewModel: ItemCollectionViewModel!
     
 }
@@ -18,6 +19,11 @@ extension ItemCollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         fetchRequiredItems()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detailViewController = segue as! ItemDetailViewController
+        let item = sender as! Item
     }
 }
 
@@ -81,7 +87,17 @@ extension ItemCollectionViewController {
     }
     
     private func handleSelectionAtSection(_ sectionIndex: Int, index: Int) {
-        viewModel.handleSelectionAtSection(sectionIndex, index: index)
+        viewModel.handleSelectionAtSection(sectionIndex, index: index) {
+            item in
+            showItemInDetailViewController(item: item)
+        }
     }
 
+    private func showItemInDetailViewController(item: Item) {
+        performSegue(
+            withIdentifier:
+                ItemCollectionViewController.toItemDetailSegueIdentifier,
+            sender: item
+        )
+    }
 }
