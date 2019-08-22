@@ -3,7 +3,7 @@ import Foundation
 class ItemCollectionViewModel: NSObject {
     
     @IBOutlet weak var provider: ItemCollectionProvider!
-    private let collectionWrapper = Dynamic(ItemCollection())!
+    private let collectionWrapper = Dynamic(ItemCollection())
     var collection: ItemCollection {
         get {
             return collectionWrapper.value

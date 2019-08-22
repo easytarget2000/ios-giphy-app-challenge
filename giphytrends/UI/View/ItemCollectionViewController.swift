@@ -2,7 +2,7 @@ import UIKit
 
 class ItemCollectionViewController: UICollectionViewController {
     
-    @IBOutlet weak var viewModel: ItemCollectionViewModel
+    @IBOutlet weak var viewModel: ItemCollectionViewModel!
     
 }
 
@@ -33,7 +33,7 @@ extension ItemCollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "", for: indexPath)
     
         // Configure the cell
     
@@ -47,7 +47,7 @@ extension ItemCollectionViewController {
 extension ItemCollectionViewController {
 
     /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
+    // Uncomment this method to specify if the specified item sho1uld be highlighted during tracking
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
         return true
     }

@@ -5,9 +5,9 @@ class Dynamic<T> {
     
     var bind: (T) -> () = { _ in }
     
-    var value: T? {
+    var value: T {
         didSet {
-            bind(value!)
+            bind(value)
         }
     }
     
