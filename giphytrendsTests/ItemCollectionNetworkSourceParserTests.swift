@@ -1,6 +1,6 @@
 import Foundation
 
-class GIFItemCollectionNetworkSourceParserTests {
+class ItemCollectionNetworkSourceParserTests {
     
     let sampleJSON = ""
     

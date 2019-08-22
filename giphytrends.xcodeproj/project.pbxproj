@@ -13,7 +13,6 @@
 		30934D10230C5CF600CA57C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30934D0E230C5CF600CA57C9 /* Main.storyboard */; };
 		30934D12230C5CF700CA57C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30934D11230C5CF700CA57C9 /* Assets.xcassets */; };
 		30934D15230C5CF700CA57C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30934D13230C5CF700CA57C9 /* LaunchScreen.storyboard */; };
-		30934D20230C5CF700CA57C9 /* giphytrendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D1F230C5CF700CA57C9 /* giphytrendsTests.swift */; };
 		30934D2B230C5CF800CA57C9 /* giphytrendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D2A230C5CF800CA57C9 /* giphytrendsUITests.swift */; };
 		30934D42230C7FAB00CA57C9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D41230C7FAB00CA57C9 /* Item.swift */; };
 		30934D44230C7FE900CA57C9 /* ItemCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D43230C7FE900CA57C9 /* ItemCollection.swift */; };
@@ -27,7 +26,7 @@
 		30C07E04230DA69700568ABE /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E03230DA69700568ABE /* ItemCollectionViewController.swift */; };
 		30C07E06230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E05230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift */; };
 		30C07E08230DB42900568ABE /* ItemCollectionNetworkResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E07230DB42900568ABE /* ItemCollectionNetworkResponseParser.swift */; };
-		30C07E0A230DE68B00568ABE /* GIFItemCollectionNetworkSourceParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E09230DE68B00568ABE /* GIFItemCollectionNetworkSourceParserTests.swift */; };
+		30C07E0A230DE68B00568ABE /* ItemCollectionNetworkSourceParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E09230DE68B00568ABE /* ItemCollectionNetworkSourceParserTests.swift */; };
 		30C07E0C230DF78400568ABE /* ItemCollectionNetworkSourceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E0B230DF78400568ABE /* ItemCollectionNetworkSourceConfiguration.swift */; };
 		30C07E11230DFE8000568ABE /* ItemCollectionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E10230DFE8000568ABE /* ItemCollectionPage.swift */; };
 		30C0CA48230C968E00CB1A6B /* ItemCollectionSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0CA47230C968E00CB1A6B /* ItemCollectionSourceDelegate.swift */; };
@@ -63,7 +62,6 @@
 		30934D14230C5CF700CA57C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30934D16230C5CF700CA57C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30934D1B230C5CF700CA57C9 /* giphytrendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = giphytrendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30934D1F230C5CF700CA57C9 /* giphytrendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = giphytrendsTests.swift; sourceTree = "<group>"; };
 		30934D21230C5CF700CA57C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30934D26230C5CF800CA57C9 /* giphytrendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = giphytrendsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30934D2A230C5CF800CA57C9 /* giphytrendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = giphytrendsUITests.swift; sourceTree = "<group>"; };
@@ -80,7 +78,7 @@
 		30C07E03230DA69700568ABE /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
 		30C07E05230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionPageNetworkResponse.swift; sourceTree = "<group>"; };
 		30C07E07230DB42900568ABE /* ItemCollectionNetworkResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionNetworkResponseParser.swift; sourceTree = "<group>"; };
-		30C07E09230DE68B00568ABE /* GIFItemCollectionNetworkSourceParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionNetworkSourceParserTests.swift; sourceTree = "<group>"; };
+		30C07E09230DE68B00568ABE /* ItemCollectionNetworkSourceParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionNetworkSourceParserTests.swift; sourceTree = "<group>"; };
 		30C07E0B230DF78400568ABE /* ItemCollectionNetworkSourceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionNetworkSourceConfiguration.swift; sourceTree = "<group>"; };
 		30C07E10230DFE8000568ABE /* ItemCollectionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionPage.swift; sourceTree = "<group>"; };
 		30C0CA47230C968E00CB1A6B /* ItemCollectionSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionSourceDelegate.swift; sourceTree = "<group>"; };
@@ -159,10 +157,9 @@
 		30934D1E230C5CF700CA57C9 /* giphytrendsTests */ = {
 			isa = PBXGroup;
 			children = (
-				30934D1F230C5CF700CA57C9 /* giphytrendsTests.swift */,
 				30934D21230C5CF700CA57C9 /* Info.plist */,
 				30C0CA49230CA0F900CB1A6B /* ItemCollectionProviderTests.swift */,
-				30C07E09230DE68B00568ABE /* GIFItemCollectionNetworkSourceParserTests.swift */,
+				30C07E09230DE68B00568ABE /* ItemCollectionNetworkSourceParserTests.swift */,
 			);
 			path = giphytrendsTests;
 			sourceTree = "<group>";
@@ -523,8 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30C07E0A230DE68B00568ABE /* GIFItemCollectionNetworkSourceParserTests.swift in Sources */,
-				30934D20230C5CF700CA57C9 /* giphytrendsTests.swift in Sources */,
+				30C07E0A230DE68B00568ABE /* ItemCollectionNetworkSourceParserTests.swift in Sources */,
 				30C0CA4A230CA0F900CB1A6B /* ItemCollectionProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
