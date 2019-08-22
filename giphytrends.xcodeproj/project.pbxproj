@@ -172,6 +172,7 @@
 		3066FC08230F4886008635AB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				30934D16230C5CF700CA57C9 /* Info.plist */,
 				30934D0A230C5CF600CA57C9 /* AppDelegate.swift */,
 				30934D4F230C84F100CA57C9 /* InfoReader.swift */,
 				30934D3C230C5DF300CA57C9 /* Assets */,
@@ -239,7 +240,6 @@
 		30934D09230C5CF600CA57C9 /* giphytrends */ = {
 			isa = PBXGroup;
 			children = (
-				30934D16230C5CF700CA57C9 /* Info.plist */,
 				3066FC08230F4886008635AB /* Common */,
 				30934D3E230C7F6400CA57C9 /* ItemCollection */,
 				3066FC09230F48E9008635AB /* ItemDetail */,
@@ -773,7 +773,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X59SC9WX5X;
-				INFOPLIST_FILE = giphytrends/Info.plist;
+				INFOPLIST_FILE = giphytrends/Common/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -792,7 +792,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X59SC9WX5X;
-				INFOPLIST_FILE = giphytrends/Info.plist;
+				INFOPLIST_FILE = giphytrends/Common/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
