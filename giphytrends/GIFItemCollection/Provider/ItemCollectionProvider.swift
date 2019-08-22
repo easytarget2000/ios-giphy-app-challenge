@@ -4,7 +4,7 @@ class ItemCollectionProvider: NSObject {
     
     @IBOutlet weak var cache: ItemCollectionSource?
     @IBOutlet weak var networkLoader: ItemCollectionSource!
-    @IBOutlet weak var configuration: ItemCollectionProviderConfiguration!
+    @IBOutlet weak var configuration: ItemCollectionProviderInfoConfiguration!
     private lazy var numberOfItemsPerPage: Int = {
         return configuration.numberOfItemsPerPage
     }()

@@ -52,7 +52,7 @@
                         <outlet property="parser" destination="v2K-1S-F7d" id="Q2O-uj-Wxg"/>
                     </connections>
                 </customObject>
-                <customObject id="NNE-Ew-N6h" userLabel="Provider Configuration" customClass="ItemCollectionProviderConfiguration" customModule="giphytrends" customModuleProvider="target">
+                <customObject id="NNE-Ew-N6h" userLabel="Provider Configuration" customClass="ItemCollectionProviderInfoConfiguration" customModule="giphytrends" customModuleProvider="target">
                     <connections>
                         <outlet property="infoReader" destination="GJq-Hl-Ajz" id="Nbi-cP-p4U"/>
                     </connections>

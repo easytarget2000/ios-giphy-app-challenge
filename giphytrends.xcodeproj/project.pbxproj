@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BCDF43C93F5FA0D0B8FA7A0 /* Pods_giphytrends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30876313E780656367F3AEAA /* Pods_giphytrends.framework */; };
+		3016A497230EBD450006B99E /* ItemCollectionProviderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016A496230EBD450006B99E /* ItemCollectionProviderConfiguration.swift */; };
 		30934D0B230C5CF600CA57C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D0A230C5CF600CA57C9 /* AppDelegate.swift */; };
 		30934D10230C5CF600CA57C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30934D0E230C5CF600CA57C9 /* Main.storyboard */; };
 		30934D12230C5CF700CA57C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30934D11230C5CF700CA57C9 /* Assets.xcassets */; };
@@ -21,7 +22,7 @@
 		30934D4C230C812800CA57C9 /* ItemCollectionProviderCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4B230C812800CA57C9 /* ItemCollectionProviderCallback.swift */; };
 		30934D4E230C849E00CA57C9 /* ItemCollectionNetworkSourceAPIKeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4D230C849E00CA57C9 /* ItemCollectionNetworkSourceAPIKeyStorage.swift */; };
 		30934D50230C84F100CA57C9 /* InfoReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4F230C84F100CA57C9 /* InfoReader.swift */; };
-		30934D52230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D51230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift */; };
+		30934D52230C856300CA57C9 /* ItemCollectionProviderInfoConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D51230C856300CA57C9 /* ItemCollectionProviderInfoConfiguration.swift */; };
 		30934D58230C8B6A00CA57C9 /* ItemCollectionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D57230C8B6A00CA57C9 /* ItemCollectionSource.swift */; };
 		30C07E04230DA69700568ABE /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E03230DA69700568ABE /* ItemCollectionViewController.swift */; };
 		30C07E06230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E05230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3016A496230EBD450006B99E /* ItemCollectionProviderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionProviderConfiguration.swift; sourceTree = "<group>"; };
 		30876313E780656367F3AEAA /* Pods_giphytrends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_giphytrends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30934D07230C5CF600CA57C9 /* giphytrends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giphytrends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30934D0A230C5CF600CA57C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +75,7 @@
 		30934D4B230C812800CA57C9 /* ItemCollectionProviderCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionProviderCallback.swift; sourceTree = "<group>"; };
 		30934D4D230C849E00CA57C9 /* ItemCollectionNetworkSourceAPIKeyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionNetworkSourceAPIKeyStorage.swift; sourceTree = "<group>"; };
 		30934D4F230C84F100CA57C9 /* InfoReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoReader.swift; sourceTree = "<group>"; };
-		30934D51230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionProviderConfiguration.swift; sourceTree = "<group>"; };
+		30934D51230C856300CA57C9 /* ItemCollectionProviderInfoConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionProviderInfoConfiguration.swift; sourceTree = "<group>"; };
 		30934D57230C8B6A00CA57C9 /* ItemCollectionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionSource.swift; sourceTree = "<group>"; };
 		30C07E03230DA69700568ABE /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
 		30C07E05230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionPageNetworkResponse.swift; sourceTree = "<group>"; };
@@ -238,7 +240,8 @@
 				30C07E10230DFE8000568ABE /* ItemCollectionPage.swift */,
 				30934D45230C803B00CA57C9 /* ItemCollectionProvider.swift */,
 				30934D4B230C812800CA57C9 /* ItemCollectionProviderCallback.swift */,
-				30934D51230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift */,
+				3016A496230EBD450006B99E /* ItemCollectionProviderConfiguration.swift */,
+				30934D51230C856300CA57C9 /* ItemCollectionProviderInfoConfiguration.swift */,
 				30C07E0D230DF98500568ABE /* Source */,
 			);
 			path = Provider;
@@ -499,7 +502,7 @@
 				30934D58230C8B6A00CA57C9 /* ItemCollectionSource.swift in Sources */,
 				30C0CA48230C968E00CB1A6B /* ItemCollectionSourceDelegate.swift in Sources */,
 				30934D4E230C849E00CA57C9 /* ItemCollectionNetworkSourceAPIKeyStorage.swift in Sources */,
-				30934D52230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift in Sources */,
+				30934D52230C856300CA57C9 /* ItemCollectionProviderInfoConfiguration.swift in Sources */,
 				30934D50230C84F100CA57C9 /* InfoReader.swift in Sources */,
 				30C07E06230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift in Sources */,
 				30C07E04230DA69700568ABE /* ItemCollectionViewController.swift in Sources */,
@@ -511,6 +514,7 @@
 				30934D46230C803B00CA57C9 /* ItemCollectionProvider.swift in Sources */,
 				30934D42230C7FAB00CA57C9 /* Item.swift in Sources */,
 				30C07E08230DB42900568ABE /* ItemCollectionNetworkResponseParser.swift in Sources */,
+				3016A497230EBD450006B99E /* ItemCollectionProviderConfiguration.swift in Sources */,
 				30934D0B230C5CF600CA57C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
