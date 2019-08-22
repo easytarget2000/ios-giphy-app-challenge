@@ -4,12 +4,12 @@ struct ItemCollectionPageNetworkResponse: Codable {
     
     struct ItemNetworkResponse: Codable {
         
-        let url: String
         let images: ItemImagesNetworkResponse
         
         struct ItemImagesNetworkResponse: Codable {
             
-            let fixed_height_small: ItemImageNetworkResponse
+            let fixed_height: ItemImageNetworkResponse
+            let fixed_height_small_still: ItemImageNetworkResponse
             
             struct ItemImageNetworkResponse: Codable {
                 

@@ -12,8 +12,9 @@ import Foundation
                 from: data
             )
             items = responseCollection.data.map({ (responseItem) -> Item in
-                let fullURL = responseItem.url
-                let previewURL = responseItem.images.fixed_height_small.url
+                let fullURL = responseItem.images.fixed_height.url
+                let previewURL
+                    = responseItem.images.fixed_height_small_still.url
                 return Item(fullURL: fullURL, previewURL: previewURL)
             })
         } catch let error {
