@@ -34,6 +34,8 @@ class ItemCollectionViewModel: NSObject {
         atIndexPath indexPath: IndexPath
     ) {
         let item = collection[indexPath.row]
+        let previewURL = URL(string: item.previewURL)
+        cell.animatedImageView.sd_setImage(with: previewURL, completed: nil)
     }
     
 }

@@ -43,7 +43,7 @@ extension ItemCollectionViewController {
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: ItemCollectionCell.identifier,
             for: indexPath
-        )
+        ) as! ItemCollectionCell
         viewModel.populateCell(cell, atIndexPath: indexPath)
         return cell
     }
