@@ -44,7 +44,7 @@ extension ItemCollectionViewController {
             withReuseIdentifier: ItemCollectionCell.identifier,
             for: indexPath
         )
-    
+        viewModel.populateCell(cell, atIndexPath: indexPath)
         return cell
     }
     

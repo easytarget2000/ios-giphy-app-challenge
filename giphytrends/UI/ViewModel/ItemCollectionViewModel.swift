@@ -29,4 +29,11 @@ class ItemCollectionViewModel: NSObject {
         
     }
     
+    func populateCell(
+        _ cell: ItemCollectionCell,
+        atIndexPath indexPath: IndexPath
+    ) {
+        let item = collection[indexPath.row]
+    }
+    
 }
