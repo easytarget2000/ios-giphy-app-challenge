@@ -38,6 +38,9 @@
                             <outlet property="delegate" destination="y2v-KR-cUM" id="aS9-fQ-nsF"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <outlet property="viewModel" destination="6mn-g9-8td" id="n6T-Jg-2Ip"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdZ-NL-DWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="6mn-g9-8td" customClass="ItemCollectionViewModel" customModule="giphytrends" customModuleProvider="target">

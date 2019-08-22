@@ -13,5 +13,5 @@ class Dynamic<T> {
     
     init(_ v: T) {
         value = v
+    }
 }
-

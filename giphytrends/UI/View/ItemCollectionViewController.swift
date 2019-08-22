@@ -2,39 +2,30 @@ import UIKit
 
 class ItemCollectionViewController: UICollectionViewController {
     
+    @IBOutlet weak var viewModel: ItemCollectionViewModel
+    
+}
+
+// MARK: - UIViewController Life Cycle
+
+extension ItemCollectionViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
-        // TODO: Clean up in actual UI branch:
-        provider.getCollectionFromFastestSource { (collection) in
-//            NSLog(collection.description)
-        }
     }
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
+// MARK: UICollectionViewDataSource
+    
+extension ItemCollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
-
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
@@ -48,8 +39,12 @@ class ItemCollectionViewController: UICollectionViewController {
     
         return cell
     }
+    
+}
 
-    // MARK: UICollectionViewDelegate
+// MARK: UICollectionViewDelegate
+
+extension ItemCollectionViewController {
 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking

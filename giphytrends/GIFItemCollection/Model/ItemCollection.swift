@@ -1,1 +1,1 @@
-typealias ItemCollection = [Item?]
+typealias ItemCollection = [Item]
