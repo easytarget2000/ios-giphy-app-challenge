@@ -54,9 +54,19 @@ extension ItemCollectionProvider: ItemCollectionSourceDelegate {
 
 extension ItemCollectionProvider {
     
-    func handlePageRetrieved(page: ItemCollectionPage) {
+    internal func handlePageRetrieved(page: ItemCollectionPage) {
         pages.append(page)
-        
+        let collection = collectionWithoutPageGaps()
+        #if DEBUG
+        let debugMessage = "DEBUG: ItemCollectionProvider"
+            + ".handlePageRetrieved(): page: \(page.index), "
+            + "collection.count: \(collection.count)"
+        NSLog(debugMessage)
+        #endif
+        callback?(collection)
+    }
+    
+    internal func collectionWithoutPageGaps() -> ItemCollection {
         let sortedPages = pages.sorted { (page1, page2) -> Bool in
             return page1.index < page2.index
         }
@@ -69,13 +79,7 @@ extension ItemCollectionProvider {
                 collection.append(contentsOf: page.items)
             }
         }
-        callback?(collection)
         
-        #if DEBUG
-            let debugMessage = "DEBUG: ItemCollectionProvider"
-                + ".handlePageRetrieved(): page: \(page.index), "
-                + "collection.count: \(collection.count)"
-            NSLog(debugMessage)
-        #endif
+        return collection
     }
 }
