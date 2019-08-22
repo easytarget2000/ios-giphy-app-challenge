@@ -2,8 +2,6 @@ import UIKit
 
 class ItemCollectionViewController: UICollectionViewController {
     
-    @IBOutlet weak var provider: ItemCollectionProvider!
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
