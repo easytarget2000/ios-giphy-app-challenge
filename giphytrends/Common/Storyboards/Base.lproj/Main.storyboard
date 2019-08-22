@@ -38,11 +38,13 @@
                             <outlet property="delegate" destination="y2v-KR-cUM" id="aS9-fQ-nsF"/>
                         </connections>
                     </collectionView>
-                    <connections>
-                        <outlet property="provider" destination="hZK-Xr-40s" id="vua-Td-H6v"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdZ-NL-DWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="6mn-g9-8td" customClass="ItemCollectionViewModel" customModule="giphytrends" customModuleProvider="target">
+                    <connections>
+                        <outlet property="provider" destination="hZK-Xr-40s" id="88T-Hk-Sfs"/>
+                    </connections>
+                </customObject>
                 <customObject id="hZK-Xr-40s" customClass="ItemCollectionProvider" customModule="giphytrends" customModuleProvider="target">
                     <connections>
                         <outlet property="configuration" destination="NNE-Ew-N6h" id="PMv-rT-B9D"/>
