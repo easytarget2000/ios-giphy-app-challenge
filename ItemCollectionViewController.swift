@@ -2,7 +2,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class GIFItemCollectionViewController: UICollectionViewController {
+class ItemCollectionViewController: UICollectionViewController {
     
     @IBOutlet weak var provider: ItemCollectionProvider!
 

@@ -23,7 +23,7 @@
 		30934D50230C84F100CA57C9 /* InfoReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D4F230C84F100CA57C9 /* InfoReader.swift */; };
 		30934D52230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D51230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift */; };
 		30934D58230C8B6A00CA57C9 /* ItemCollectionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D57230C8B6A00CA57C9 /* ItemCollectionSource.swift */; };
-		30C07E04230DA69700568ABE /* GIFItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E03230DA69700568ABE /* GIFItemCollectionViewController.swift */; };
+		30C07E04230DA69700568ABE /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E03230DA69700568ABE /* ItemCollectionViewController.swift */; };
 		30C07E06230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E05230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift */; };
 		30C07E08230DB42900568ABE /* ItemCollectionNetworkResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E07230DB42900568ABE /* ItemCollectionNetworkResponseParser.swift */; };
 		30C07E0A230DE68B00568ABE /* GIFItemCollectionNetworkSourceParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07E09230DE68B00568ABE /* GIFItemCollectionNetworkSourceParserTests.swift */; };
@@ -75,7 +75,7 @@
 		30934D4F230C84F100CA57C9 /* InfoReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoReader.swift; sourceTree = "<group>"; };
 		30934D51230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionProviderConfiguration.swift; sourceTree = "<group>"; };
 		30934D57230C8B6A00CA57C9 /* ItemCollectionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionSource.swift; sourceTree = "<group>"; };
-		30C07E03230DA69700568ABE /* GIFItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
+		30C07E03230DA69700568ABE /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
 		30C07E05230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionPageNetworkResponse.swift; sourceTree = "<group>"; };
 		30C07E07230DB42900568ABE /* ItemCollectionNetworkResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionNetworkResponseParser.swift; sourceTree = "<group>"; };
 		30C07E09230DE68B00568ABE /* GIFItemCollectionNetworkSourceParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFItemCollectionNetworkSourceParserTests.swift; sourceTree = "<group>"; };
@@ -247,7 +247,7 @@
 		30934D56230C883800CA57C9 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				30C07E03230DA69700568ABE /* GIFItemCollectionViewController.swift */,
+				30C07E03230DA69700568ABE /* ItemCollectionViewController.swift */,
 			);
 			name = UI;
 			path = giphytrends/GIFItemCollection/UI;
@@ -502,7 +502,7 @@
 				30934D52230C856300CA57C9 /* ItemCollectionProviderConfiguration.swift in Sources */,
 				30934D50230C84F100CA57C9 /* InfoReader.swift in Sources */,
 				30C07E06230DB0C200568ABE /* ItemCollectionPageNetworkResponse.swift in Sources */,
-				30C07E04230DA69700568ABE /* GIFItemCollectionViewController.swift in Sources */,
+				30C07E04230DA69700568ABE /* ItemCollectionViewController.swift in Sources */,
 				30C07E0C230DF78400568ABE /* ItemCollectionNetworkSourceConfiguration.swift in Sources */,
 				30934D44230C7FE900CA57C9 /* ItemCollection.swift in Sources */,
 				30934D4C230C812800CA57C9 /* ItemCollectionProviderCallback.swift in Sources */,
