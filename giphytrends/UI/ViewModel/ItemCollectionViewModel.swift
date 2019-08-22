@@ -3,8 +3,8 @@ import Foundation
 class ItemCollectionViewModel: NSObject {
     
     @IBOutlet weak var provider: ItemCollectionProvider!
-    private let collectionWrapper = Dynamic(ItemCollection())
-    var collection: ItemCollection {
+    let collectionWrapper = Dynamic(ItemCollection())
+    private var collection: ItemCollection {
         get {
             return collectionWrapper.value
         }
@@ -15,10 +15,18 @@ class ItemCollectionViewModel: NSObject {
         }
     }
     
+    func numberOfItemsInSection(_ sectionIndex: Int) -> Int {
+        return collection.count
+    }
+    
     func fetchEntireCollection() {
         provider.getCollectionFromFastestSource { (collection) in
             self.collectionWrapper.value = collection
         }
+    }
+    
+    func handleSelectionAtSection(_ sectionIndex: Int, index: Int) {
+        
     }
     
 }
