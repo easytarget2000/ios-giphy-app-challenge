@@ -11,6 +11,7 @@
 		3016A497230EBD450006B99E /* ItemCollectionProviderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016A496230EBD450006B99E /* ItemCollectionProviderConfiguration.swift */; };
 		3016A499230EBF840006B99E /* ItemCollectionSampleJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 3016A498230EBF830006B99E /* ItemCollectionSampleJSON.json */; };
 		30217E13230F042A00FEA9F7 /* ItemCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30217E12230F042A00FEA9F7 /* ItemCollectionViewModel.swift */; };
+		30217E16230F048300FEA9F7 /* ItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30217E15230F048300FEA9F7 /* ItemCollectionCell.swift */; };
 		30934D0B230C5CF600CA57C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30934D0A230C5CF600CA57C9 /* AppDelegate.swift */; };
 		30934D10230C5CF600CA57C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30934D0E230C5CF600CA57C9 /* Main.storyboard */; };
 		30934D12230C5CF700CA57C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30934D11230C5CF700CA57C9 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		3016A496230EBD450006B99E /* ItemCollectionProviderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionProviderConfiguration.swift; sourceTree = "<group>"; };
 		3016A498230EBF830006B99E /* ItemCollectionSampleJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ItemCollectionSampleJSON.json; sourceTree = "<group>"; };
 		30217E12230F042A00FEA9F7 /* ItemCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewModel.swift; sourceTree = "<group>"; };
+		30217E15230F048300FEA9F7 /* ItemCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionCell.swift; sourceTree = "<group>"; };
 		30876313E780656367F3AEAA /* Pods_giphytrends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_giphytrends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30934D07230C5CF600CA57C9 /* giphytrends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giphytrends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30934D0A230C5CF600CA57C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				30C07E03230DA69700568ABE /* ItemCollectionViewController.swift */,
+				30217E15230F048300FEA9F7 /* ItemCollectionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				30934D4C230C812800CA57C9 /* ItemCollectionProviderCallback.swift in Sources */,
 				30C07E11230DFE8000568ABE /* ItemCollectionPage.swift in Sources */,
 				30934D4A230C80E400CA57C9 /* ItemCollectionNetworkSource.swift in Sources */,
+				30217E16230F048300FEA9F7 /* ItemCollectionCell.swift in Sources */,
 				30934D46230C803B00CA57C9 /* ItemCollectionProvider.swift in Sources */,
 				30934D42230C7FAB00CA57C9 /* Item.swift in Sources */,
 				30C07E08230DB42900568ABE /* ItemCollectionNetworkResponseParser.swift in Sources */,

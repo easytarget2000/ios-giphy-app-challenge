@@ -1,7 +1,5 @@
 import UIKit
 
-private let reuseIdentifier = "Cell"
-
 class ItemCollectionViewController: UICollectionViewController {
     
     @IBOutlet weak var provider: ItemCollectionProvider!
