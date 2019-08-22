@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y2v-KR-cUM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ka0-w4-eut">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item Collection View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="h8N-Cf-bIF">
+            <objects>
+                <navigationController id="ka0-w4-eut" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E9L-o2-pac">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="y2v-KR-cUM" kind="relationship" relationship="rootViewController" id="TJk-aD-4WY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FvP-aQ-A80" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-168" y="21"/>
+        </scene>
+        <!--Trending-->
         <scene sceneID="Uko-jZ-UUe">
             <objects>
                 <collectionViewController id="y2v-KR-cUM" customClass="ItemCollectionViewController" customModule="giphytrends" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,6 +70,9 @@
                             <outlet property="delegate" destination="y2v-KR-cUM" id="aS9-fQ-nsF"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="Trending" id="bcV-BL-4cY">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="d8e-Z1-THq"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="viewModel" destination="6mn-g9-8td" id="n6T-Jg-2Ip"/>
                         <segue destination="HDM-pu-sOH" kind="show" identifier="ItemCollectionToItemDetail" id="40U-re-XHd"/>
@@ -102,7 +121,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qNp-Ql-y2J" customClass="SDAnimatedImageView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
