@@ -158,8 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				30934D21230C5CF700CA57C9 /* Info.plist */,
-				30C0CA49230CA0F900CB1A6B /* ItemCollectionProviderTests.swift */,
 				30C07E09230DE68B00568ABE /* ItemCollectionNetworkSourceParserTests.swift */,
+				30C0CA49230CA0F900CB1A6B /* ItemCollectionProviderTests.swift */,
 			);
 			path = giphytrendsTests;
 			sourceTree = "<group>";
