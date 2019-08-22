@@ -25,8 +25,13 @@ class ItemCollectionViewModel: NSObject {
         }
     }
     
-    func handleSelectionAtSection(_ sectionIndex: Int, index: Int) {
-        
+    func handleSelectionAtSection(
+        _ sectionIndex: Int,
+        index: Int,
+        callback: ItemCollectionSelectionCallback
+    ) {
+        let item = collection[index]
+        callback(item)
     }
     
     func populateCell(
