@@ -5,7 +5,8 @@ class ItemCollectionProviderTests: XCTestCase {
     
     func testThat_RetrievedPagesAreAppendedInOrder() {
         let provider = ItemCollectionProvider()
-        let providerConfiguration =
+        provider.configuration = ItemCollectionProviderMockConfiguration()
+        
         let page1 = ItemCollectionPage(index: 0, items: [mockItem()])
         let page2 = ItemCollectionPage(index: 1, items: [mockItem()])
         let page3 = ItemCollectionPage(index: 2, items: [mockItem()])
@@ -27,5 +28,12 @@ class ItemCollectionProviderTests: XCTestCase {
     
     private func mockItem() -> Item {
         return Item(fullURL: "", previewURL: "")
+    }
+    
+    private class ItemCollectionProviderMockConfiguration:
+        NSObject, ItemCollectionProviderConfiguration {
+        
+        var numberOfPages: Int = 3
+        var numberOfItemsPerPage: Int = 1
     }
 }

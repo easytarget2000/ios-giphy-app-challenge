@@ -1,6 +1,6 @@
 import Foundation
 
-protocol ItemCollectionProviderConfiguration: NSObjectProtocol {
+@objc protocol ItemCollectionProviderConfiguration: NSObjectProtocol {
     var numberOfItemsPerPage: Int { get }
     var numberOfPages: Int { get }
 }

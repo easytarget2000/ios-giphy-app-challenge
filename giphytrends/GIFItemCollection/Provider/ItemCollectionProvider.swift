@@ -2,9 +2,9 @@ import Foundation
 
 class ItemCollectionProvider: NSObject {
     
-    @IBOutlet weak var cache: ItemCollectionSource?
-    @IBOutlet weak var networkLoader: ItemCollectionSource!
-    @IBOutlet weak var configuration: ItemCollectionProviderInfoConfiguration!
+    @IBOutlet var cache: ItemCollectionSource?
+    @IBOutlet var networkLoader: ItemCollectionSource!
+    @IBOutlet var configuration: ItemCollectionProviderConfiguration!
     private lazy var numberOfItemsPerPage: Int = {
         return configuration.numberOfItemsPerPage
     }()
