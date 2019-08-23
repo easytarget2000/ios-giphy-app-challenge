@@ -9,7 +9,9 @@ The app has been developed in Xcode 10.3 using Swift 5 with a deployment target 
 * [SDWebImage](https://github.com/SDWebImage)
 
 ## Development Approach
-I started working on this take home test by separating the task description into small issues. These issues filled up a simple [kanban board](https://github.com/easytargetmixel/ios-giphy-app-challenge/projects/1), along with my initial thoughts and ideas in the issue descriptions. 
+I started working on this take home test by separating the task description into small issues. These issues filled up a simple [kanban board](https://github.com/easytargetmixel/ios-giphy-app-challenge/projects/1), along with my initial thoughts and ideas in the issue descriptions.
+
+The project structure is driven by functionality topics first and technological layers second. Files and classes related to one topic, i.e. the grid view or the full screen view, belong together. This is reflected in the directories and helps modularising the app.
 
 As this is a coding challenge, I have not deleted branches after merging them into the release branch (master). This way, it is easier to trace the work that has been done.
 
