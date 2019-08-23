@@ -85,7 +85,7 @@ extension ItemCollectionViewController {
     }
     
     private func fetchRequiredItems() {
-        viewModel.fetchEntireCollection()
+        viewModel.fetchEntireCollectionIfNeeded()
     }
     
     private func handleSelectionAtSection(_ sectionIndex: Int, index: Int) {

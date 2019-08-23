@@ -19,7 +19,11 @@ class ItemCollectionViewModel: NSObject {
         return collection.count
     }
     
-    func fetchEntireCollection() {
+    func fetchEntireCollectionIfNeeded() {
+        guard collection.isEmpty else {
+            return
+        }
+        
         provider.getCollectionFromFastestSource { (collection) in
             self.collectionWrapper.value = collection
         }
